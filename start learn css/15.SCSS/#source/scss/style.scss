@@ -1,0 +1,28 @@
+@import "nullstyle.scss";
+
+.block{
+    font-size: 50px;
+    line-height: 60px;
+    padding: 50px ;
+	>p{
+		color: red;
+	}
+	.block__text{
+		font-size: 80px;
+		
+		span{
+        color: green;
+    	
+	}
+
+	}
+	.link{
+		color: orange;
+		
+		&:hover{
+			color: green;
+			text-decoration: underline;
+		}
+	}
+
+}

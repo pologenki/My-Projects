@@ -1,0 +1,153 @@
+
+body{
+    background-color: #e8e8e8;
+}
+
+.First-ContentBox {
+margin: 163px 0 0 250px;
+}
+
+.Ul-Content-1{
+padding: 0 0 81px 0;
+}
+
+
+.Ul-Content-1 li {
+background: url(img/check_icon_37\ \(1\).png) left no-repeat;
+list-style-type: none;
+margin: 0px 0px 15px 0px;
+padding: 0px 0px 0px 35px;
+}
+.Ul-Content-1 li:nth-child(1){
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+font-size: 20px;
+font-weight: 400px ;
+text-decoration: line-through;
+color: #273d46;
+
+}
+
+.Ul-Content-1 li:nth-child(2) {
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+font-size: 20px;
+font-weight: 700px  ;
+color: #273d46;
+
+}
+
+.Ul-Content-1 li:nth-child(3){
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+font-size: 20px;
+font-weight: 400px;
+font-style: italic;
+color: #273d46;
+
+}
+
+.Ul-Content-1 li:nth-child(4){
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+font-size: 20px;
+font-weight: 400px  ;
+text-transform: uppercase;
+
+
+}
+
+
+
+
+/**********************************/
+.Ul-Content-2 li {
+    background: url(img/check_icon_37\ \(1\).png) left no-repeat;
+    list-style-type: none;
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 0px 35px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}   
+    
+.fa-li {
+    list-style-type: none;
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 0px 35px;
+    /* повторяюзаяся часть всегдадолжна быть только в отдельном блоке 
+    чтобы не копировать самого себя
+     */
+    color: #273d46;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400px;
+
+  }
+
+
+
+.Ul-Content-2 li:nth-child(1){
+
+color: #273d46;}
+
+
+    
+    
+.Ul-Content-2  li:nth-child(2):hover{
+    
+   
+    
+    
+   
+    color: red; 
+    
+
+}
+    
+
+
+
+
+.Ul-Content-2 li:nth-child(3){
+   
+    
+   
+    color: #273d46;
+   }
+
+
+    .Ul-Content-2 li:nth-child(4){
+ 
+    color: #273d46;
+  }
+  .fa-ul li:nth-child(2):hover{
+    color: red;
+  }
+
+.Footer-Content{
+ 
+}
+.span-1{
+    height: 44px;
+	padding:0 30px ;
+	box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+	background-color: #80b7b3;
+	display: inline-block;
+	border-radius: 24px;
+	margin: 30px 60px 40px 40px;
+	line-height: 44px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 44px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #ffffff;
+	width: 170px; 
+}
+
+
+.Footer-Login {
+
+}
+
+
+.Forma-1 {
+
+}
+

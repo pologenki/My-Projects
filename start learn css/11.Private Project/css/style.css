@@ -1,0 +1,153 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+min-width: 1170px;
+}
+
+
+
+.container {
+max-width: 880px;
+margin: 0 auto;
+}
+
+
+.header-top {
+display: flex;
+justify-content: space-between;
+margin: 40px 0 -20px 0;
+
+}
+
+.header-top__languages {
+
+
+}
+
+.header-top__languages__item {
+	font-family: 'Bebas Neue';
+	font-size: 12px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin: 0 0px 0 10px;
+	color: black ;
+}
+
+.header-top__languages__item:hover{
+	background-color: black;
+	color: white;
+	
+}
+
+
+
+
+.header-top__link {
+	font-family:'Akzidenz-Grotesk BQ Condensed';
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #000000;
+
+
+}
+
+.header-top__link:hover{
+	text-decoration: underline;
+	font-family:'Akzidenz-Grotesk BQ Condensed';
+}
+
+
+
+.header-bot {
+display: flex;
+align-items: center;
+}
+
+
+.header-bot__column {
+flex: 0 0 33.333%;
+
+}
+
+.header-bot__menu {
+margin: 0 0 0 10px;
+
+}
+
+.header-bot-menu__list {
+display: flex;
+justify-content: space-between;
+}
+
+.header-bot-menu__link {
+	font-family:'Akzidenz-Grotesk BQ Condensed';
+	font-size: 15px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #000000;
+
+
+}
+.header-bot__logo{
+display: block;
+text-align: center;
+
+}
+
+.header-logo__text {
+	display: block;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 13px;
+	line-height: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	color: #000000;
+}
+
+.header-logo__img {
+display: inline-block;
+margin: 1px 0 22px 0 ;
+}
+

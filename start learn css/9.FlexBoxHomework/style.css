@@ -1,0 +1,364 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/*! Main container*/
+.wrapper {
+min-height: 100%;/* ?Задаем это что бы весь контонт был на всю высоту экрана  */
+overflow: hidden; /*? Ставим на всякий случай ,чтобы ничего не вылезло за экран */
+
+display: flex; /*? Делаем из врапера ФЛЕКС контейнер */
+flex-direction: column;/*? Переворачивает все флекс элементы ставя из в столбик */
+
+
+}
+
+
+
+.content {
+flex: 1 1 auto; /*? мы дклаем это для того что бы приЖать footer Контент максимально увеличивается до основания блока! Таким образом мы приЖимаем footer это первая цыфра 1-grov(делает нашь контент до основания браузера расширяя его ) 1-shrink(дает ему возмо;ность су;аться при су;ении браузера) auto(ширина контента) */
+
+
+}
+
+
+
+
+
+
+
+
+
+/*! Header*/
+.hi {
+background-color: #445162;
+padding: 50px 0 50px 0;
+}
+.container {
+	max-width: 1180px;/*? этим мы ограничиваем ширину нашего контента ! Всего контента на странице*/
+    margin: 0px auto;/*? этим мы переносим контент ВЕСЬ на центр экрана */
+	
+}
+.hi__row {
+	display: flex;/*? row Всегда создаем display-flex */
+	justify-content:space-between;/*? раскидывает контент создавая между ним пробелы! раскидывает элементы по углам  */
+}
+.hi__body {
+	color: #ffffff;
+}
+
+.ul-hi__list {
+font-style: 20px;
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.fa-check{
+	padding: 0 15px 20px 0px;
+
+}
+
+
+.hi__title {
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+font-size: 60px;
+margin: 0 0 38px 0;
+}
+
+.hi__img {
+}
+
+/*!Content-1 */
+.what {
+padding: 50px 0 0 0;
+}
+
+
+.container {
+	
+}
+
+
+.what__row {
+display: flex;
+
+}
+
+
+.what__body {
+padding: 0 0 0 38px;
+
+}
+
+
+
+
+.what__title{
+
+color: #445161;
+font-size: 30px;
+line-height: 36px;
+margin: 0 0 33px 0 ;
+
+}
+
+
+.what__text p{
+margin: 0 0 25px 0;
+
+color: #333333;
+
+font-size: 16px;
+
+line-height: 24px;
+
+
+
+
+}
+
+
+
+.what__image {
+flex: 0 0 430px;/*? Тут берем размер картинки и прописываем его , что бы легко мо;но было заменить на другую картинку того ;еразмера */
+}
+
+/*! Content-2 (hard)*/
+.colums {
+background-color: #f5f5f5;
+padding: 50px;
+
+
+}
+
+.container {
+
+}
+
+.colums_title {
+	color: #445161;
+	font-size: 30px;
+	line-height: 36px;
+	margin: 0 0 33px 0 ;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+.colums__row {
+display: flex;
+flex-wrap: wrap;
+margin: 0 -8px ;
+
+}
+
+.colums__colum {
+flex: 0 1 50%; /*? Это мы делаем для что бы сузить уонтентна 50% 0- запрещяем увеличваться и 1 разрешаем уменьшаться */
+margin: 0 0 30px 0 ;
+}
+
+.colums__item {
+
+}
+
+.item {
+}
+
+.item__row {
+display: flex;
+}
+
+.items__image {
+flex: 0 0 200px;
+margin: 5px 0 0 0;
+}
+
+.items__body {
+flex: 1 1 auto;
+padding: 0 0 0 15px;
+}
+
+.item__title {
+
+	font-size: 24px;
+	line-height: 30px;
+margin: 0 0 11px 0 ;
+	color: #445161;
+}
+
+.item__text {
+font-size: 16px;
+color: #4f4f4f;
+line-height: 24px;
+
+}
+
+/*! Vertical Colums*/
+.vertical {
+padding: 50px;
+}
+
+
+.container {
+
+}
+
+
+.title {
+	color: #445161;
+	font-size: 30px;
+	line-height: 36px;
+	margin: 0 0 33px 0 ;
+	text-align: center;
+}
+
+
+.vertica__body {
+max-width: 990px;
+margin: 0 auto;
+
+}
+
+
+.vertical__row {
+display: flex;
+margin: 0 -22.5px;
+
+}
+
+
+.vertical__column {
+padding: 0 22.5px;
+flex: 0 1 33.333%;
+
+
+}
+
+
+.vertical__item {
+background-color: #445162;
+color: white;
+border-radius: 5px ;
+border: 1px solid #445162;;
+
+
+}
+
+
+.vertical__subtitle {
+text-align: center;
+font-size: 24px;
+line-height: 30px;
+font-weight: 400;
+text-transform: uppercase;
+padding: 18px 0 12px 0 ;
+}
+
+
+.vertical__lable {
+	text-align: center;
+color: #445162;
+background-color: white;
+font-size: 40px;
+line-height: 30px;
+font-weight: 400;
+padding:15px 0 15px 0 ;
+}
+
+
+.vertical__text {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	padding: 20px 20px 0 20px;
+	flex: 1 1 auto;
+}
+
+.vertical__text p:last-child{
+	margin: 10px 0 0 0;
+}
+
+
+.vertical__btn{
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	background-color: white;
+	display: block;
+	padding: 10px;
+	margin: 20px ;
+	width: 260px;
+	height: 40px;
+	text-align: center;
+	border-radius: 5px ;
+	
+}	
+
+
+
+
+/*! footer*/
+.footer {
+background:#f5f5f5;	
+}
+
+.footer__row {
+display: flex;
+height: 65px;
+justify-content: center;
+align-items: center;
+
+}
+.footer__text {
+
+color: #445162;
+font-size: 12px;
+letter-spacing: 0.3px;
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+.wrapper {
+}
+
+
+.container {
+max-width: 870px;
+margin: 0 auto;
+
+}
+
+
+.header-top {
+display: flex;
+justify-content: space-between;
+margin: 34px 0 -22px -15px;
+
+}
+
+
+
+.header-top__language {
+display: flex;
+
+}
+
+
+
+.header-top__lng a {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 12px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #ffffff;
+	color: #000000;
+	margin: 0 0 0 15px;
+}
+
+
+.header-top__lng a:hover{
+	background-color: black;
+	color: white;
+}
+
+
+
+.header-top__link {
+	font-family:'Akzidenz-Grotesk BQ Condensed';
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.header-top__link:hover{
+	text-decoration: underline;
+}
+
+
+
+.header-bot {
+display: flex;
+align-items: center;
+
+}
+
+
+.header-bot__column {
+flex: 0 0 33.333%;
+
+}
+
+
+.header-bot__menu {
+
+
+}
+
+
+.header-bot__list {
+display: flex;
+justify-content: space-between;
+
+}
+
+.header-bot__link {
+	font-family:'Akzidenz-Grotesk BQ Condensed';
+	font-size: 15px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+
+.header-bot__logo {
+
+	
+	text-align: center;
+}
+
+.header-bot__text {
+
+ font-family: 'Bebas Neue', cursive;
+font-size: 10px;
+line-height: 25px;
+text-transform: uppercase;
+letter-spacing: 1.0em;
+color: #000000;
+letter-spacing: 0.80em;
+
+}
+.header-bot-logoImg {
+    
+    margin: 20px 0 20px 0 ;
+
+}

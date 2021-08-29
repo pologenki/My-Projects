@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /*Обнуление*/
 * {
+ 
+ 
   padding: 0;
   margin: 0;
   border: 0;
@@ -73,72 +75,71 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-/*?Задаем стандартно Height 100%*/
+/*!Шапка*/
 body{
   height: 100%;
   
 }
 
 .wrapper {
+
 }
 
 
 .container {
-max-width: 1180px;/*Ограничиваем нашь контент по ширине(Стандартно 1170px*/
+max-width: 1180px;
 margin: 0 auto;
-padding: 0px 50px;/*Делаем отступ слева и с права на 10px */
+padding: 0px 50px;
 }
 
 .header {
-position: fixed;/*?что бы шапка всегда была сверху ПРЕКЛЕИНА и при скроле не проподала!*/
-width: 100%;/*?Растягиваем шапку на весь экран*/
+width: 100%;
 top: 0;
 left: 0;
-z-index:50 ;/*?z-index Задаем большей чтобы она накрыла весь нашь контент при скроле!*/
+z-index:50 ;
 height: 790px;
 background:url(../img/Header-background.png)center no-repeat;
 background-size: cover;
+padding:0 0 121px 0 ;
 }
 
-/*С помощью псевдокласса мы создаем нашу шапку которую мы разукрасм в другой цвет ,*/
+
 .header:before{
 content: '';
-position: absolute;/*Это мы используем что бы вырвать блок и начать его позиционировать*/
-top: 0;/*он остается в левом верхнем углу*/
+position: absolute;
+top: 0;
 left: 0;
-width: 100%;/*Растягиваем его в верх и низ*/
+width: 100%;
 height: 100%;
-z-index: 3;/*! Это мы ставим для того что бы наше меню открывалось под шапкой*/
+z-index: 3;
 }
 
 
 .header__body {
-position: relative;/*?Это мы задаем для того что бы вытащить котнтентную часть поверх цветного backgraunda*/
-/*Смысл Z-indeX в том что по умолчанию он 0 но при увеличении значения на 1 2 3 он закрывает собой блок если значение 2он закроет собой 0 и 1 блок*/
+position: relative;
 display: flex;
 justify-content: space-between;
-height: 80px;/*Уменьшаем размер феалетовой шапки*/
-align-items: center;/*Позицианируем все по центру (Картинку и текст)*/
- /*!z-index: 2; Мы его убираем когда нашь бургер УжЕ ГОТОВ ! Она нам была ну;на только до тех пор пока мы не наченаем расставлят z-indexi По всем слоям*/
+height: 80px;
+align-items: center;
+
 }
 
 
 .header__logo {
-flex: 0 0 189px;/*/*?кортинка подстроится под размер меню backgraunda */
-/*С помощью этого мы достаем нашь логотип и делаем так что бы он был виден*/
+flex: 0 0 189px;
 overflow: hidden;
 position: relative;
 z-index: 3;
 }
 
 .header__logo img{
-  max-width: 100%;/*?кортинка подстроится под размер меню backgraunda */
-  display: block;/*?Если мы делаем картинку круглой borderradius 50% То displayblock лечит обрезание картинки снизу*/
+  max-width: 100%;
+  display: block;
   
 }
 
 .header__burger {
-display: none;/*скрываем изменения для всех изменений которые выше 767 px */
+display: none;
 }
 
 
@@ -148,7 +149,7 @@ display: none;/*скрываем изменения для всех измене
 
 
 .header__list {
-display: flex;/*переворачиваем текст со столбика в строчку*/
+display: flex;
 position: relative;
 z-index: 3;
 }
@@ -174,7 +175,7 @@ text-decoration: none;
 
 
 .content {
-padding: 194px 50px 0 50px;/*Это мы делаем для отступа от шапки , шапка 80 px ставим 100px И текст отступает от шапки*/
+padding: 194px 50px 0 50px;
 z-index: 70;
 text-align: center;
 
@@ -207,7 +208,6 @@ text-align: center;
   border-radius: 2px;
   text-align: center;
   margin:0 auto;
- 
 }
 
 .bottom__text{
@@ -218,15 +218,58 @@ font-weight: 600;
 text-transform: uppercase;
 color: #ffffff;
 padding: 12px ;
+}
 
+/*!Features*/
+.block__1 {
+padding: 121px 0 0 0;
+}
+
+
+.container {
+}
+
+
+.features {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.feature__item {
+flex: 1 0 33.33333%;
+text-align: center;
+padding: 0 30px;
+padding-bottom: 74px;
+}
+
+.feature__img {
+padding-bottom: 34px;
+}
+
+.feature__title {
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2d3033;
+  padding-bottom: 25px;
+}
+
+.feature__text {
+  font-family: Raleway;
+  font-size: 11px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #6c7279;
 
 }
 
 
+/*!Адаптив*/
 
 
-
-/*Тут начинаем работать с текстом в адаптиве*/
 @media (max-width: 992px) { 
 
 .header__link{
@@ -245,7 +288,7 @@ padding: 12px ;
 
 @media (max-width:767px){
   .content{
-    padding: 70px 0 0 0;/*Уменьшаем растояние от шапки до текста вверх*/
+    padding: 70px 0 0 0;
   }
 .header{
     height: 740px;
@@ -254,20 +297,20 @@ padding: 12px ;
 }
 
 
-/*Тут мы начинаем одаптивность для этого мы берем max-width 767px именно с этого момента при уменьшении разрешения нашь сайт начнет переходить в мобильную версию*/
+
 
 @media (max-width:767px){
   
   
   body.lock{
-    overflow: hidden;/*!Делаем после добавления JS этим мы запрещаем во время открытого меню скролить нашь текст в верх и низ*/
+    overflow: hidden;
   }
   
   .header__body{
-    height: 50px;/*Сдесь мы задаем размер шапки при суЖении*/
+    height: 50px;
   }
   .header__logo{
-    flex: 0 0 140px;/*Это делаем для того что бы уменьшить нашь логотип при су;ении*/
+    flex: 0 0 140px;
   }
   .content__title{
     font-size: 30px;
@@ -276,17 +319,17 @@ padding: 12px ;
    .content__text{
      font-size: 11px;
    }
-  /*Тут мы задаем форму нашего бургера высоту длинну линий делаем его блоком и ставим position relative для перемещения нашего бургера в право шапки*/
+  
   .header__burger{
     display: block;
     width: 30px;
     height: 20px;
-    /*Это мы ставим для того чтобы увидеть нашь бургер при суЖении*/
+    
     z-index: 3;
     position: relative;
   }
 
-  /*Тут мы ресуем нашь бургер а точнее линии для бургера , мы используем span по середине и псевдокласс after i before сверху и снизу */
+ 
   .header__burger span{
     position: absolute;
     background-color: #fff;
@@ -294,19 +337,19 @@ padding: 12px ;
     left: 0 ;
     width: 100%;
     height: 2px;
-    top: 9px;/*Ставим среднюю линию по середине*/
-    transition: all 0.3s ease 0s;/*!Это мы добавляем после написания кода в JS Для более плавного перехода бургера на крестик*/
+    top: 9px;
+    transition: all 0.3s ease 0s;
   }
 
   .header__burger:before,
   .header__burger:after{
     content: '';
     background-color: white;
-    position: absolute;/*наши линии появляютя*/
+    position: absolute;
     width: 100%;
-    height: 2px;/*задаем длинну линий*/
+    height: 2px;
     left: 0;
-    transition: all 0.3s ease 0s;/*!Это мы добавляем после написания кода в JS Для более плавного перехода бургера на крестик*/
+    transition: all 0.3s ease 0s;
   }
   .header__burger:before{
     top: 0;
@@ -318,7 +361,7 @@ padding: 12px ;
   
 
   /*****************************/
-  /*!Это свойство мы начинаем использовать только после того как напишем код в JS--- Мы это делаем для того чтобы при наЖатии создавался крестик*/
+  
   .header__burger.active:before{
     transform:rotate(45deg) ;
     top: 9px;
@@ -334,36 +377,34 @@ padding: 12px ;
   }
 /*********************************/
 
-  /*Только при уменьшении разрешения будет меняться хорактеристики  которые мы указали*/
+  
   .header__menu {
-  position: fixed;/*Фиксируем наше меню что бы оно не гуляло вверх и вниз а мертво стояло на месте*/
-  top: -100%;/*!Делаем после написания кода в JS для того что бы наше меню сехоло вниз, потготавливаем его для того что бы при на;атии на бургер оно появлялось*/
+  position: fixed;
+  top: -100%;
   left: 0;
   width: 100%;
   height: 100%;
   background:url(../img/Header-background.png)center no-repeat;
-  background-size: cover;/*заливаем фон который будет появлятся только при суЖении*/
+  background-size: cover;
  
-  padding:90px 10px 0 40px  ;/*Делаем отступы слева*/
-  transition: all 0.3s ease 0s;/*!Делаем после написания кода в JS для того что бы была более плавная анимация появления меню*/
-  overflow: auto;/*!Делается после JS дает возмо;ность при перивернутом телефоне скролить вверх-вниз*/
+  padding:90px 10px 0 40px  ;
+  transition: all 0.3s ease 0s;
+  overflow: auto;
     font-size: 40px;
 }
   
   .header__menu.active{
-    top: 0;/*!Делаем после написания кода в JS для того что бы При на;атии наше меню появлялось и пропадало*/
+    top: 0;
     
   
   }
   
   .header__list {
-    display: block;/*display block имеет свойство отключать display flex 
-    Что мы тут и делаем , теперь у нас наше меню встоет в столбик в левый угол*/
-   
+    display: block;
    
 }
 .header__link {
- /*Это мы делаем для того что бы сделать отступы наших  li*/
+ 
 }
 
 .header__link {
@@ -376,4 +417,3 @@ padding: 12px ;
 
 }
 
-/*!Бургер готов теперь надо добавить динамику и мы переходим в javascript*/

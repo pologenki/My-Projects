@@ -222,7 +222,7 @@ padding: 12px ;
 
 /*!Features*/
 .block__1 {
-padding: 121px 0 0 0;
+padding: 121px 0 101px 0;
 }
 
 
@@ -246,6 +246,8 @@ padding-bottom: 74px;
 .feature__img {
 padding-bottom: 34px;
 }
+
+
 
 .feature__title {
   font-family: Raleway;
@@ -280,13 +282,16 @@ flex-wrap: wrap;
 .pictures__item {
  flex: 0 1 25%;
  position: relative;
- 
+ border-radius: 2px solid white  ;
 }
 
 
 .pictures__img {
 width: 100%;
 z-index: 1;
+height: 100%;
+border-bottom: 2px solid white  ;
+border-right: 2px solid white  ;
 }
 
 
@@ -326,10 +331,77 @@ transition: opacity .2s linear;
   color: #ffffff;
 }
 
-.pictures__item:hover .pictures__content {
+.pictures__content:hover {
   opacity:1;
+  
+  
+}
+
+/*!Mambers*/
+.block__3 {
+}
+.members {
+display: flex;
+padding-top: 101px;
+padding-bottom: 101px;
 
 }
+
+
+.members__item {
+padding-right: 30px;
+}
+.member__img{
+height: 247px;
+
+}
+
+.member__title {
+  font-family: Raleway;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #2d3033;
+  margin:30px 0 16px 0 ;
+}
+.member__info {
+  font-family: Raleway;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #e84545;
+  margin: 0 0 29px 0;
+}
+.member__text {
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #6c7279;
+  margin: 0 0 31px 0;
+}
+
+.member__icon {
+  display: flex;
+  
+}
+
+.fa-twitter-square  {
+padding-right: 4px;
+color:#c6cacc;
+}
+
+.fa-facebook-square {
+  padding-right: 4px;
+  color:#c6cacc;
+}
+
+.fa-invision {
+  padding-right: 4px;
+  color:#c6cacc;
+}
+
 
 
 /*!Адаптив*/

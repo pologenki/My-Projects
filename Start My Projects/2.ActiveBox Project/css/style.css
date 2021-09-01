@@ -402,6 +402,124 @@ color:#c6cacc;
   color:#c6cacc;
 }
 
+/*!reviws*/
+
+.block__4 {
+}
+.reviews {
+background-color: #53354a;
+overflow: hidden;
+}
+
+
+.container {
+}
+
+
+.reviews__item {
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.reviews__foto {
+width: 50%;
+height: 500px;
+position: relative;
+}
+.reviews__img{
+position: absolute;
+top: 50%;
+right: 0;
+z-index: 1;
+transform: translateY(-50%);
+}
+
+.reviews__content {
+width: 50%;
+padding-left: 85px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+.reviews__text {
+  font-family: Cardo;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+ 
+}
+
+.reviews__autor {
+  font-family: Raleway;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+padding-top: 30px;
+}
+
+/*!dowload-Block__5*/
+.block__5 {
+}
+.container {
+}
+
+
+.dowload {
+height: 340px;
+
+}
+
+
+.dowload__item {
+text-align: center;
+height: 100%;
+margin-top: 150px;
+
+}
+
+
+.dowload__title {
+  font-family: Raleway;
+  font-size: 28px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #2d3033;
+  padding-bottom: 16px;
+}
+
+
+.dowload__text {
+  font-family: Raleway;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2d3033;
+  padding-bottom: 40px;
+}
+
+
+.dowload__btn {
+  font-family: Raleway;
+font-size: 13px;
+line-height: 21px;
+font-weight: 600;
+text-transform: uppercase;
+color: white;
+width: 280px;
+height: 46px;
+background-color: #e84545 ;
+margin: 0 auto  ;
+padding: 12px;
+}
+
 
 
 /*!Адаптив*/

@@ -283,6 +283,7 @@ flex-wrap: wrap;
  flex: 0 1 25%;
  position: relative;
  border-radius: 2px solid white  ;
+
 }
 
 
@@ -472,7 +473,7 @@ padding-top: 30px;
 
 
 .dowload {
-height: 340px;
+height: 300px;
 
 }
 
@@ -520,10 +521,102 @@ margin: 0 auto  ;
 padding: 12px;
 }
 
+/*!Footer */
+footer{
 
+background-color: #3a3e64;
+
+}
+
+.container {
+}
+
+.footer__inner {
+display: flex;
+  flex-wrap: wrap;
+  padding: 70px 0;
+}
+
+
+.footer__item {
+flex: 0 1 33.3333%;
+text-align: center;
+
+}
+
+.footer__tite {
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 21px;
+}
+
+.footer__text {
+  opacity: 0.5;
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  padding-top: 21px;
+}
+
+.footer__icon {
+
+
+}
+.icon__li{
+display: flex;
+justify-content: center;
+padding-top: 21px;
+}
+
+/*!footer__copyright*/
+.footer__copyright{
+background-color:#313454 ;
+height:130px;
+}
+
+.copyright__text{
+  text-align: center;
+  padding-top: 47px;
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #808080;
+ 
+}
+.fa-heart{
+  color: red;
+}
+
+span{
+  color: #ffffff;
+}
 
 /*!Адаптив*/
+@media (max-width: 1200px) { 
+.members{
+  display: flex;
+  flex-wrap: wrap;
+  
 
+}
+.members__item{
+  text-align: center;
+  
+}
+.member__icon{
+  
+  justify-content: center;
+padding-bottom: 20px;
+}
+
+ }
 
 @media (max-width: 992px) { 
 
@@ -667,8 +760,64 @@ padding: 12px;
   font-size: 30px;
   line-height: 71px;
 }
+/*!block__1*/
+.features{
+  display: flex;
+  flex-direction: column;
+}
+
+/*!block__2*/
+.pictures{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 130px;
+}
+
+.pictures__item{
+border-bottom: 2px solid white;
+
+}
+.feature__img{
+
+}
+/*!block__4*/
+.review{
 
 
+}
 
+.reviews__item{
+
+}
+
+.reviews__foto{
+position: relative;
+top: 0px;
+left: 70px;
+width: 330px;
+height: 500px;
+}
+.reviews__content{
+  
+ 
+}
+.reviews__text{
+  font-size: 30px;
+}
+.reviews__autor{
+  font-size: 10px;
+}
+/*!Block__5*/
+.dowload__title{
+  font-size: 20px;
+}
+.dowload__text{
+  font-size: 10px;
+}
+/*!Footrer*/
+.footer__inner{
+  display: flex;
+  flex-direction: column;
+}
 }
 

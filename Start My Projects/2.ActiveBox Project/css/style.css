@@ -599,6 +599,8 @@ span{
 }
 
 /*!Адаптив*/
+/*****************1200******************/
+
 @media (max-width: 1200px) { 
 .members{
   display: flex;
@@ -618,6 +620,10 @@ padding-bottom: 20px;
 
  }
 
+
+ /*****************992******************/
+
+
 @media (max-width: 992px) { 
 
 .header__link{
@@ -634,21 +640,20 @@ padding-bottom: 20px;
 
 
 
+/***************767****************/
+
+
+
 @media (max-width:767px){
-  .content{
+
+
+    .content{
     padding: 70px 0 0 0;
   }
 .header{
     height: 740px;
     height: 70%;
   }
-}
-
-
-
-
-@media (max-width:767px){
-  
   
   body.lock{
     overflow: hidden;
@@ -791,21 +796,20 @@ border-bottom: 2px solid white;
 }
 
 .reviews__foto{
-position: relative;
-top: 0px;
-left: 70px;
-width: 330px;
-height: 500px;
+width: 100%;
+right: -120px;
+margin:0 0 20px 0;
 }
 .reviews__content{
+  width: 100%;
+  padding-left: 0px;
   
- 
 }
 .reviews__text{
-  font-size: 30px;
+ 
 }
 .reviews__autor{
-  font-size: 10px;
+margin-bottom: 20px;
 }
 /*!Block__5*/
 .dowload__title{
@@ -821,3 +825,58 @@ height: 500px;
 }
 }
 
+/**************576*****************/
+
+@media (max-width: 576px) { 
+
+
+  .content__title{
+  font-size: 20px;
+  line-height: 25px;
+}
+.content__text{
+  line-height: 25px;
+}
+.button{
+width: 150px;
+}
+
+/*block__2 */
+.pictures{
+margin-bottom: -150px;
+}
+/*block__3*/
+.block__3{
+
+  
+}
+
+.members__item{
+
+
+}
+.member__img{
+  width: 240px;
+  height: 240px;
+}
+.member__text{
+font-size: 10px;
+}
+
+
+/*block__4 */
+.reviews__content{
+  font-size: 10px;
+}
+.reviews__text{
+font-size: 20px;
+}
+.reviews__autor{
+font-size: 9px;
+}
+
+/*block__5*/
+.dowload__btn{
+  width: 150px;
+}
+ }

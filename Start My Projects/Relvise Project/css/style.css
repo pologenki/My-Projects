@@ -1,0 +1,455 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+/*?Задаем стандартно Height 100%*/
+body{
+  height: 100%;
+  font-family:Montserrat ;
+
+}
+
+.wrapper {
+}
+
+.container {
+max-width: 1180px;
+margin: 0 auto;
+padding: 0px 50px;
+}
+/*!Header+burger*/
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index:50 ;
+  height: 793px;
+  background:url(../img/header__background.jpg)center no-repeat;
+  background-size: cover;
+  padding:0 0 121px 0 ;
+  background-position: right;
+}
+
+.header:before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 3;
+}
+
+
+.header__body {
+position: relative;
+display: flex;
+height: 80px;
+align-items: center;
+}
+
+
+.header__logo {
+flex: 0 0 60px;
+position: relative;
+z-index: 3;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0.1px;
+color: #252B42;
+padding-right: 139px;
+}
+
+
+.header__burger {
+display: none;
+}
+
+
+
+.header__menu {
+}
+
+
+.header__list {
+display: flex;
+position: relative;
+z-index: 3;
+}
+
+.header__list li{
+  margin: 0 0 0 20px;
+
+}
+
+.header__link {
+color: black;
+font-size: 15px;
+text-decoration: none;
+font-family: Montserrat;
+
+}
+
+
+.content {
+padding-top: 110px;
+
+
+}
+
+
+.container {
+
+}
+
+.content__item {
+  max-width: 500px;
+ 
+  
+}
+
+
+.content__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+.content__text:hover{
+  
+}
+.content__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-top: 35px;
+}
+
+.content__btn {
+margin-top: 35px;
+display: inline-flex;
+
+}
+
+
+.btn__1 {
+border: 1px solid #0D5C63;
+color: #0D5C63;
+border-radius: 36px;
+font-family: Montserrat;
+font-weight: bold;
+font-size: 14px;
+letter-spacing: 0.2px;
+text-align: center;
+margin-right: 10px;
+padding:10px 36px ;
+
+}
+.btn__1:first-child{
+  background-color: #FF7B47;
+  color: white;
+}
+
+/*!Header+burger**/
+
+/*!consulting block__1*/
+
+
+.consulting {
+display: flex;
+position: relative;
+bottom: 121px;
+z-index: 3;
+}
+
+
+.container {
+}
+
+.consulting__inner{
+ display: flex;
+flex-wrap: wrap;
+justify-content: center;
+flex: 1 0 33.3333%;
+}
+.consulting__item {
+max-width:328px;  
+background-color:red; 
+margin-right: 30px;
+height: 242px;
+padding: 39px 70px 35px 30px;
+
+}
+
+.consulting__item:hover{
+  background-color: white;
+}
+
+.consulting__img {
+  margin-bottom: 10px;
+}
+.consulting__img {
+  color: #0D5C63;
+}
+.test__1:hover{
+color: white;
+}
+
+
+.consulting__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  margin-bottom: 10px;
+  
+}
+.consulting__text {
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2px;
+color: #737373;
+margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px){
+  /**!Header+burger**/
+  .content__title{
+    font-size: 40px;
+    line-height: 60px;
+    
+  }
+  .content__text{
+margin-bottom: 50px;
+  }
+  .content__btn{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .btn__1{
+    margin-bottom: 15px;
+  }
+  .color-overlay {
+    width: 100% ;
+    height: 793px;
+    background: white;
+    opacity: 0.7;
+    position: absolute;
+    }
+    .content {
+    z-index: 1;
+    position: relative;
+    }
+  
+  .header__body{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__logo{
+    flex: 0 0 45px;
+    margin-top: 10px;
+    
+  }
+
+
+  .header__burger{
+    display: block;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+    position: relative;
+  }
+
+  
+  .header__burger span{
+    position: absolute;
+    background-color: black;
+    position: absolute;
+    left: 0 ;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+    z-index: 3;
+  }
+
+  .header__burger:before,
+  .header__burger:after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+    z-index: 3;
+  }
+  .header__burger:before{
+    top: 0;
+  }
+  
+  .header__burger:after{
+    bottom: 0;
+  }
+  
+
+  /*****************************/
+ 
+  .header__burger.active:before{
+    transform:rotate(45deg) ;
+    top: 9px;
+  }
+
+  .header__burger.active:after{
+    transform:rotate(-45deg) ;
+    bottom: 9px;
+  }
+
+  .header__burger.active span{
+    transform:scale(0);
+  }
+/*********************************/
+
+
+  .header__menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#18b5a4 ;
+  padding: 70px 0 0 0 ;
+  padding:70px 10px 0 10px  ;
+  transition: all 0.3s ease 0s;
+  overflow: auto;
+    z-index: 2;
+}
+  
+  .header__menu.active{
+    top: 0;
+  
+  }
+  
+  .header__list {
+    display: block;
+   text-align: center;
+   
+}
+
+
+.header__list li{
+  margin: 40px 0 50px 0;/*Это мы делаем для того что бы сделать отступы наших  li*/
+  
+}
+.header__link{
+font-size: 50px;
+font-family:
+Montserrat;
+color: #737373 ;
+}
+/*!Header+burger**/
+
+
+}
+

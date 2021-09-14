@@ -86,7 +86,7 @@ body{
 .container {
 max-width: 1180px;
 margin: 0 auto;
-padding: 0px 50px;
+padding: 0px 10px;
 }
 /*!Header+burger*/
 .header {
@@ -242,10 +242,12 @@ display: flex;
 position: relative;
 bottom: 121px;
 z-index: 3;
+
 }
 
 
 .container {
+
 }
 
 .consulting__inner{
@@ -253,28 +255,39 @@ z-index: 3;
 flex-wrap: wrap;
 justify-content: center;
 flex: 1 0 33.3333%;
+
 }
 .consulting__item {
 max-width:328px;  
-background-color:red; 
 margin-right: 30px;
 height: 242px;
 padding: 39px 70px 35px 30px;
-
+background-color: white;
 }
 
 .consulting__item:hover{
-  background-color: white;
+  background-color: #0D5C63 ;
+  color: white;
+  
 }
 
 .consulting__img {
   margin-bottom: 10px;
+  
 }
-.consulting__img {
-  color: #0D5C63;
+
+
+.fa-briefcase {
+  color:  #0D5C63;
 }
-.test__1:hover{
-color: white;
+
+.fa-home {
+  color:  #0D5C63;
+}
+
+
+.fa-book-open {
+  color:  #0D5C63;
 }
 
 
@@ -285,7 +298,7 @@ color: white;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.1px;
-  color: #252B42;
+  
   margin-bottom: 10px;
   
 }
@@ -296,8 +309,90 @@ font-weight: 500;
 font-size: 14px;
 line-height: 20px;
 letter-spacing: 0.2px;
-color: #737373;
 margin-bottom: 10px;
+}
+
+
+.designing {
+  background: #FAFAFA;
+}
+
+
+.container {
+border: 2px solid red;
+}
+
+.title__all-topics{
+text-align: center;
+
+}
+.designing__title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  
+}
+
+.designing__text {
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 0.2px;
+color: #737373;
+}
+
+
+
+.designing__inner {
+display: flex;
+
+justify-content: space-between;
+}
+
+.designing__inner-item {
+max-width: 100%;
+height: 209px;
+background-color: white;
+text-align: center;
+padding: 30px 40px;
+flex: 1 0 23%;
+margin-right: 30px;
+margin-top: 30px;
+padding: 30px 40px;
+
+}
+
+.designing__inner-img {
+padding-bottom: 10px;
+}
+.designing__inner-title {
+/* h2 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 57px;
+letter-spacing: 0.2px;
+color: #252B42;
+padding-bottom: 10px;
+}
+
+
+.designing__inner-text {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.1px;
 }
 
 
@@ -306,8 +401,17 @@ margin-bottom: 10px;
 
 
 
-
-
+@media (max-width:992px){
+  .designing__inner{
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  .designing__inner-item{
+    margin-right: 0;
+  }
+}
 
 
 

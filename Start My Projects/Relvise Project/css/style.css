@@ -419,7 +419,7 @@ letter-spacing: 0.1px;
 
 
 .Practice {
-margin-top: 125px;
+margin-top: 50px;
 display: flex;
 
 }
@@ -450,20 +450,29 @@ margin-bottom: 45px;
 .Practice__inner {
 display: flex;
 flex-wrap: wrap;
-margin: 0 -13px;
+margin: 0 -15px;
+}
+
+.Practice__inner>*:not(last-child){
+  margin-left: 19.5px;
 }
 
 .Practice__item {
 flex: 0 1 22%;
-margin: 0 14px;
+margin: 0 15px;
+display: flex;
+flex-direction: column;
 }
 
 .Practice__item-content{
 padding: 35px;
 background-color:white;
 border: 1px solid green ;
-height: 210px;
+height: 100%;
+
 }
+
+
 
 .Practice__title {
   font-family: Montserrat;
@@ -494,32 +503,135 @@ padding: 0 0 69% 0;
 display: block;
 }
 
-.practice__pic{
-  width: 267px;
-  
-}
+
 
 /************!block__3-Practice************/
 
 /*!block__4-Aboutus */
 .Aboutus {
-margin-top: 200px;
+margin-top: 100px;
 }
 .container {
 }
+/**/
 .title__all-topics {
 }
 .designing__title {
 }
 .designing__text {
 }
+/**/
+
+.aboutus__inner {
+display: flex;
+justify-content: space-between;
+
+}
+
+
+/*left__column-video*/
+.inner__video {
+
+position: relative;
+padding: 0 0 30.25% 0;
+flex: 0 0  57%;
+}
+.inner__video iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+object-fit: cover;
+}
+
+/*left__column-video*/
+
+
+
+
+/*right__column-content*/
+.inner__content {
+flex: 1 1 300px;
+padding: 0 0 0 131px;
+
+}
+.inner__content-title {
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 57px;
+letter-spacing: 0.2px;
+color: #252B42;
+margin-bottom: 10px;
+}
+
+.inner__content-text {
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2px;
+color: #737373;
+margin-bottom: 50px;
+
+}
+
+
+.inner__content-quick{
+display: flex;
+
+}
+.quick__img{
+  padding-right: 16px;
+}
+.fa-tachometer-alt {
+  color: #FF7B47;
+
+}
+.fa-users {
+color: #FF7B47;
+
+}
+.quick__item{
+padding-bottom: 30px;
+}
+.content-quick__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  
+}
+
+.content-quick__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  
+}
+.inner__content-quick-2 {
+}
+
+
+/*right__column-content*/
+
 
 
 
 /*!block__4-Aboutus */
 
 
-
+/**/
 
 
 
@@ -578,6 +690,17 @@ flex: 0 1 40%;
     margin-right: 0;
   
   }
+/*!Aboutus block__4*/
+.aboutus__inner{
+  flex-direction: column;
+}
+.inner__content{
+padding: 0;
+}
+.inner__video{
+  padding-bottom: 500px;
+}
+
 }
 
 
@@ -726,3 +849,18 @@ color: #737373 ;
 
 }
 
+@media (max-width: 576px) { 
+  /*block__3-Practice*/
+  .Practice__item{
+    flex: 0 1 auto;
+    
+  }
+  .Practice__item-content{
+    
+
+  }
+  /*About block__4*/
+  .inner__video{
+    padding-bottom: 350px;
+  }
+ }

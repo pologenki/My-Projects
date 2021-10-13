@@ -232,7 +232,7 @@ line-height: 25px;
     width: 30px;
     height: 20px;
     /*Это мы ставим для того чтобы увидеть нашь бургер при суЖении*/
-    z-index: 3;
+    z-index: 10;
     position: relative;
   }
 

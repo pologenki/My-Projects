@@ -83,7 +83,7 @@ body{
 }
 
 .container {
-max-width: 1180px;
+max-width: 1280px;
 margin: 0 auto;
 padding: 0px 10px;
 }
@@ -199,6 +199,7 @@ z-index: 3;
 
 .content {
 padding: 170px 0 0 0;
+
 }
 
 
@@ -216,6 +217,7 @@ padding: 170px 0 0 0;
   line-height: 60px;
   color: #FFFFFF;
   max-width: 619px;
+  padding-bottom: 22px;
 }
 .content__text {
   font-family: Lato;
@@ -287,6 +289,7 @@ max-height: 655px;
 margin-top: -200px;
 box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
 display: flex;
+margin-bottom: 100px;
 
 }
 .container {
@@ -316,7 +319,9 @@ flex: 0 1 33,333%;
 margin: 0 35px ;
 }
 .benefits__img {
-padding-bottom: 37px;
+margin-bottom: 37px;
+width: 66px;
+height:66px ;
 }
 .benefits__title{
 padding-bottom: 37px;
@@ -365,6 +370,91 @@ color:#006DFE ;
 
 /*!benefits block__1*/
 
+/*!Trip Block__2*/
+
+
+.trip {
+
+
+}
+.container {
+}
+.trip__title {
+display: flex;
+justify-content: space-between;
+padding-bottom: 30px;
+}
+.trip__title-text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: #102746;
+  position: relative;
+
+}
+
+.trip__title-text:before{
+  content: '';
+  bottom: -10px;
+  left: 0;
+  height: 2px;
+  width:56%;
+  background-color:#006DFE;
+  position: absolute;
+  
+}
+
+
+
+.benefits__form {
+align-items: center;
+}
+
+
+.benefits__bottom {
+
+}
+
+
+
+
+.trip__inner{
+  
+  
+}
+
+.trip__foto_up{
+display: flex;
+justify-content: center;
+
+
+}
+.trip__foto_down{
+display: flex;
+justify-content: center;
+}
+
+.trip__item {
+margin: -15px;
+
+}
+
+
+.foto__up-img{
+width: 100%;
+height: 100%;
+object-fit: cover;  
+}
+
+.foto__down-img{
+  width: 100%;
+height: 100%;
+object-fit: cover; 
+}
+
+/*!Trip Block__2*/
 
 
 
@@ -372,16 +462,35 @@ color:#006DFE ;
 
 @media (max-width: 1200px) { 
   /*!benefits block__1*/
+  .benefits{
+    
+  }
   .benefits__inner{
     display: flex;
     flex-direction: column;
+    
   }
 
   .benefits__item{
     margin-bottom: 40px;
   }
-
+  /*!Trip Block __2*/
+ .trip{
+   padding-top: 500px;
  }
+ .trip__inner{
+   
+ }
+ .trip__foto_up{
+  flex-wrap: wrap;
+ 
+ }
+.trip__foto_down{
+  flex-wrap: wrap;
+
+}
+
+}
 
 @media (max-width: 992px) {
 .content__surch{
@@ -528,6 +637,47 @@ color:#006DFE ;
   margin: 0 0 20px 0;/*Это мы делаем для того что бы сделать отступы наших  li*/
   
 }
+
+/*!trip block__2*/
+.trip{
+  margin-right: 0;
+  padding-top: 550px;
+}
+.trip__title{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  padding-bottom: 10px;
+  
+}
+.trip__title-text{
+  font-size: 20px;
+}
+.benefits__bottom{
+  font-size: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+.fa-long-arrow-alt-right{
+  align-items: center;
+  padding-top: 22px;
+}
+.trip__item{
+  padding-right: 0;
+}
+.trip__item{
+align-items: center;
+
+}
+.trip__foto_up{
+
+
+}
+
+.foto__up-img{
+  padding-bottom: 14px;
+}
+
 
 
 }

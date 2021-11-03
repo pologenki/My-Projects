@@ -299,6 +299,7 @@ line-height: 25px;
   transition: all 0.3s ease 0s;/*!Делаем после написания кода в JS для того что бы была более плавная анимация появления меню*/
   overflow: auto;/*!Делается после JS дает возмо;ность при перивернутом телефоне скролить вверх-вниз*/
     z-index: 3;
+    background-size: cover;
 }
   
   .header__menu.active{
@@ -310,14 +311,20 @@ line-height: 25px;
   .header__list {
     display: block;/*display block имеет свойство отключать display flex 
     Что мы тут и делаем , теперь у нас наше меню встоет в столбик в левый угол*/
-   
+    text-align: center;
 }
 
 
 .header__list li{
-  margin: 0 0 20px 0;/*Это мы делаем для того что бы сделать отступы наших  li*/
+  margin: 40px 0 50px 0;
   
 }
+.header__link{
+  font-size: 50px;
+  font-family:
+  Montserrat;
+  color: #737373 ;
+  }
 
 
 }

@@ -83,7 +83,7 @@ body{
 }
 
 .container {
-max-width: 1280px;
+max-width: 1282px;
 margin: 0 auto;
 padding: 0px 10px;
 }
@@ -182,7 +182,7 @@ z-index: 3;
 
 .header__list li{
   margin: 0 0 0 80px;
-
+  padding: 0;
 }
 
 .header__link {
@@ -522,10 +522,137 @@ display: flex;
 
 /*!Tutorial block__3*/
 
+/*!places block__4*/
+.places {
+}
+.container {
+}
+.places__title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: #102746;
+  position: relative;
+  
+}
 
+
+  .places__title:before{
+  content: '';
+  bottom: -10px;
+  left: 0;
+  height: 2px;
+  width:20%;
+  background-color:#006DFE;
+  position: absolute;
+  
+}
+
+.places__iner {
+display: flex;  
+flex-wrap: wrap;
+margin: 0 -15px;
+padding-top: 50px;
+}
+
+.places__item {
+padding:  0 15px;
+flex: 0 1 33.333%;
+flex-wrap: wrap;
+}
+
+
+.place__img {
+padding: 0 0 97% 0;
+
+}
+
+.place__title {
+}
+.place__text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #102746;
+  padding: 45px 0;
+}
+.place__form {
+padding-bottom: 70px;
+}
+.place__bottom {
+  font-family: Lato;
+  font-style: normal;
+  font-size: 15px;
+  color: #FFFFFF; 
+  background-color: #1B7DFF ;
+  padding: 15px 19px;
+  width: 118px;
+  
+}
+
+
+/*!footer__img(video) block__4*/
+
+.inner__video{
+
+padding: 0;
+align-items: center;
+}
+
+.footer__img{
+width: 100%;
+height: 100%;
+}
+
+/*!footer__img(video) block__4*/
+
+/*!Footer block__5*/
+.footer {
+  background: #0E1D28;
+  
+}
+.container {
+}
+.footer__box{
+display: flex;
+justify-content: space-between;
+padding: 120px 0;
+}
+.footer__logo {
+justify-content: center;
+}
+.footer__inner {
+display: flex;
+flex-wrap: wrap;
+}
+.footer__item {
+}
+.footer__ul {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  
+}
+li{
+  padding-right: 100px;
+}
+
+
+/*!Footer block__5*/
 
 
 /*************!Адоптация******************/
+
+.wrapper{
+
+}
 
 @media (max-width: 1200px) { 
   /*!benefits block__1*/
@@ -623,6 +750,13 @@ object-fit: cover;
 
 
   }
+  /*!praces block__4*/
+.places__item{
+  flex: 0 48.666%;
+  margin: 0 auto;
+  
+  }
+
 }
 
 @media (max-width:767px){
@@ -642,8 +776,11 @@ object-fit: cover;
     height: 50px;/*Сдесь мы задаем размер шапки при суЖении*/
   }
   .header__logo{
-    flex: 0 0 40px;/*Это делаем для того что бы уменьшить нашь логотип при су;ении*/
-    z-index: index 10; ;
+    flex: 0 0 100px;
+    z-index: 10; 
+    align-items: center;
+
+
   }
 
   /*Тут мы задаем форму нашего бургера высоту длинну линий делаем его блоком и ставим position relative для перемещения нашего бургера в право шапки*/
@@ -654,6 +791,7 @@ object-fit: cover;
     /*Это мы ставим для того чтобы увидеть нашь бургер при суЖении*/
     z-index: 10;
     position: relative;
+    
   }
 
   /*Тут мы ресуем нашь бургер а точнее линии для бургера , мы используем span по середине и псевдокласс after i before сверху и снизу */
@@ -714,11 +852,13 @@ object-fit: cover;
   width: 100%;
   height: 100%;
   background:url(../img/background.png)center no-repeat;
-  padding: 70px 0 0 0 ;/* делаем небольшелой отступ вверх от шапки для того что бы наше меню вылезло ис под шапки*/
-  padding:70px 10px 0 10px  ;/*Делаем отступы слева*/
-  transition: all 0.3s ease 0s;/*!Делаем после написания кода в JS для того что бы была более плавная анимация появления меню*/
-  overflow: auto;/*!Делается после JS дает возмо;ность при перивернутом телефоне скролить вверх-вниз*/
-    z-index: 3;
+  padding: 70px 0 0 0 ; 
+  padding:270px 10px 0 10px  ;
+  transition: all 0.3s ease 0s;
+  overflow: auto;
+  z-index:3 ;
+  background-size: cover;
+
 }
   
   .header__menu.active{
@@ -730,15 +870,21 @@ object-fit: cover;
   .header__list {
     display: block;/*display block имеет свойство отключать display flex 
     Что мы тут и делаем , теперь у нас наше меню встоет в столбик в левый угол*/
-   
+    text-align: center;
 }
 
 
 .header__list li{
-  margin: 0 0 20px 0;/*Это мы делаем для того что бы сделать отступы наших  li*/
-  
+  margin: 40px 0 50px 0;
+  padding-bottom: 20px;
 }
-
+.header__link{
+  font-size: 50px;
+  font-family:
+  Montserrat;
+  color: white ;
+  margin-bottom: 20px;
+  }
 /*!trip block__2*/
 .trip{
   margin-right: 0;
@@ -808,10 +954,55 @@ margin-top: -23px;
 
 /*!block__3 tutorial*/
 
+ /*!practice block__4*/
+ .places__item{
+  flex: 0 1 100%;
+  margin: 0 auto;
+  }
+
+ /*!Footer*/
+.footer__box{
+  
+  display: block;
+  
+}
+ 
+ .footer__logo{
+text-align: center;
+}
+.footer__icon{
+padding-bottom: 50px;
+margin-top: -40px;
 
 
 }
 
+.footer__inner{
+
+
+}
+.footer__item{
+
+margin: 0 auto;
+
+}
+
+.footer__ul li{
+padding-bottom: 10px;
+padding-right: 10px;
+}
+}
+
 /*!Бургер готов теперь надо добавить динамику и мы переходим в javascript*/
 
-@media (min-width: 576px) {  }
+@media (max-width: 576px) { 
+  /*!practice block__4*/
+  .places__item{
+    flex: 0 1 100%;
+    margin: 0 auto;
+    }
+
+ 
+
+
+ }

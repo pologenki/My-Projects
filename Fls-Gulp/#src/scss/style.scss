@@ -1,6 +1,5 @@
 body{
-    font-size: 15px;
-    display: flex;
+
 
 
 }
@@ -17,4 +16,15 @@ div {
     @media(max-width: 767px){
         font-size: 20px;
     }
+}
+
+h1{
+    color: red;
+    font-size: 70px;
+
+}
+
+p{
+    text-decoration: underline;
+    font-size: 40px;
 }

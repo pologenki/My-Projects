@@ -1,0 +1,141 @@
+
+
+
+//!Header-menu
+.header {
+
+		// .header__body
+
+		&__body {
+		padding-top: 50px;
+        }
+
+		// .header__menu
+
+		&__menu {
+		display: flex;
+        justify-content: space-between;
+       align-items: center;
+    }
+
+		// .header__list
+
+		&__list {
+		display: flex;
+        
+        }
+
+		// .header__link
+
+		&__link {
+		padding-right: 45px;
+        
+    }
+    &__link:last-child {
+		padding-right: 0px;
+        
+    }
+
+		// .header__logo
+
+		&__logo {
+		
+        }
+
+		// .header__iqon
+
+		&__iqon {
+		display: flex;
+        align-items: center;
+        }
+
+		// .header__img
+
+		&__img {
+                padding-right: 20px;
+                
+        }
+        &__img:last-child {
+            padding-right: 0px;
+        }
+    }
+
+    
+//!Content
+
+.header {
+
+    // .header__content
+
+    &__content {
+    padding-top: 108px;
+    }
+}
+.content {
+
+    // .content__inner
+
+    &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    // .content__item
+
+    &__item {
+    
+    }
+
+    // .content__title
+
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        padding-bottom: 30px;
+    }
+
+    // .content__text
+
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 67px;
+        letter-spacing: 0.04em;
+        color: #000000;
+        padding-bottom: 50px;
+    }
+
+    // .content__bottom
+
+    &__bottom {
+    }
+
+    // .content__btm
+
+    &__btm {
+        background-color: #D7B399;
+        color: white;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        margin-right: 260px;
+        padding:18px 30px ;
+    
+    }
+
+    // .content__img
+
+    &__img {
+  
+    }
+}

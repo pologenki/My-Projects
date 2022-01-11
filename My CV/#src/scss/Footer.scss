@@ -1,0 +1,23 @@
+.footer {
+
+    // .footer__item
+
+    &__item {
+    
+    }
+
+    // .footer__text
+
+    &__text {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: poppins,sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing:10px;
+ span{
+        color: crimson;
+    }
+}
+   
+}

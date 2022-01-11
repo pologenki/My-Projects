@@ -1,0 +1,617 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src:url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+    }
+}
+
+//font-family: 'Inter', sans-serif;
+//font-family: 'Ubuntu', sans-serif;
+//font-family: 'Inter', sans-serif;
+//font-family: 'Lato', sans-serif;
+//font-family: 'Ubuntu', sans-serif;
+//font-family: 'Poppins', sans-serif;
+
+//%% /*шаблон*/
+/*@extend %__btn ;*/
+%__btn a{ padding: 15px 36px;
+  background-color:crimson ;
+  display: inline-block;
+  border-radius: 7px;
+  color: white;
+  font-family:'Lato', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+
+}
+
+/*import*/
+@import "media-max";
+@import "media-min";
+@import "fonts";
+@import"obnuleniye";
+@import"header";
+@import"Footer";
+
+body{
+    height: 100%;
+    
+  
+  }
+  
+  .wrapper {
+  }
+  
+  .container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0px 40px;
+  }
+
+
+
+  ._ibg{
+    position: relative;
+  }
+  ._ibg img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+
+  .page {
+    padding: 70px 0 30px 0;
+    }
+
+    .page__section_1 {
+    background-color: #111;
+    min-height: 600px;
+
+    }
+    
+    .Home {
+
+      // .Home__inner
+  
+      &__inner {
+      display: flex;
+      justify-content: space-between;
+      }
+  
+      // .Home__item
+  
+      &__item {
+      
+      padding: 100px 0 0 0;
+    }
+      
+      &__img {
+        
+      }
+    }
+
+  .home {
+  
+      // .home__title
+  
+      &__title {
+        color: white;
+        font-family: ubuntu,sans-serif;
+        font-size: 27px;
+        padding-bottom: 15px;
+      }
+  
+      // .home__subtitle
+  
+      &__subtitle {
+        font-size: 65px;
+        font-weight: 600;
+        font-family: ubuntu,sans-serif;
+        padding-bottom: 15px;
+        color: white;
+      
+      }
+  
+      // .home__text
+  
+      &__text {
+        font-size: 40px;
+        font-family: ubuntu,sans-serif;
+        padding-bottom: 15px;
+        color: white;
+      
+      span{
+        color: crimson;
+        font-weight: 500;
+      }
+      }
+
+    
+  
+      // .home__button
+  
+      &__button {
+        @extend %__btn ;
+      
+    }
+  
+      // .home__btn
+  
+      &__btn a  {
+
+      &:hover{
+        background: none;
+        color: crimson;
+
+      
+      }
+    }
+     
+
+    
+    
+
+    }
+  
+    
+    
+    .page__section_2 {
+      .About {
+       
+
+
+        // .About__title
+    
+        &__title-all {
+        text-align: center;
+        font-size: 55px;
+        font-weight: 500;
+        padding-top: 100px;
+        font-family: ubuntu,sans-serif;
+        }
+    
+        // .About__text
+    
+        &__subtitle {
+          text-align: center;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: 'Ubuntu', sans-serif;
+          color: crimson;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          padding-top: 10px;
+          align-items: center;
+          padding-bottom: 50px;
+
+        } 
+
+        &__subtitle::before{
+          content: '';
+          border-top: 2px solid black;
+          margin: 15px 5px 9px 0 ;
+          flex: 0 1 50px;
+
+        }
+        &__subtitle::after{
+          content: '';
+          border-top: 2px solid black;
+          margin: 17px 0px 12px 5px;
+          flex: 0 1 50px;
+
+        }
+    
+        // .About__inner
+    
+        &__inner {
+        display: flex;
+        align-items: center;
+        }
+    
+        // .About__item
+    
+        &__item {
+          &:last-child{
+            padding-left: 100px;
+          }
+        }
+    
+        .About {
+
+          // .About__title
+      
+          &__title {
+            font-size: 25px;
+            font-weight: 600;
+            font-family: poppins,sans-serif;
+            padding-bottom: 20px;
+          }
+      
+          // .About__text
+      
+          &__text {
+            color: #888;
+            font-family: poppins,sans-serif;
+            font-size: 17px;
+            text-align: justify;
+
+
+          }
+      }
+      
+        // .About__bottom
+    
+        &__bottom {
+         @extend %__btn
+         
+        }
+    
+        // .About__btn
+    
+        &__btn a  {
+          margin-top: 20px;
+          
+          &:hover{
+            background: none;
+            color: crimson;
+          }
+        
+      
+        }
+          &__fotto {
+          img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+            display: block;
+  }
+}
+}
+
+
+  
+     
+
+    
+    }
+    
+
+  
+//!Slider  
+
+
+    
+//!слайдер //   
+
+    .Skills {
+
+      // .Skills__title-all
+  
+      &__title-all {
+        text-align: center;
+        font-size: 55px;
+        font-weight: 500;
+        padding-top: 100px;
+        font-family: ubuntu,sans-serif;
+      }
+  
+      // .Skills__subtitle
+  
+      &__subtitle {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Ubuntu', sans-serif;
+        color: crimson;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        align-items: center;
+        padding-bottom: 50px;
+      }
+      &__subtitle::before{
+        content: '';
+        border-top: 2px solid black;
+        margin: 15px 5px 9px 0 ;
+        flex: 0 1 50px;
+
+      }
+      &__subtitle::after{
+        content: '';
+        border-top: 2px solid black;
+        margin: 17px 0px 12px 5px;
+        flex: 0 1 50px;
+
+      }
+      // .Skills__inner
+  
+      &__inner {
+      display: flex;
+      padding-bottom: 100px;
+      }
+  
+      // .Skills__item-left
+  
+      &__item-left {
+      flex: 0 1 50%;
+      padding-right: 40px;
+      
+      }
+  
+      // .Skills__item-right
+  
+      &__item-right {
+        flex: 0 1 50%;
+      padding-top: 20px;
+    }
+  }
+
+  .item {
+  
+      // .item__left-title
+  
+      &__left-title {
+        font-size: 25px;
+        font-weight: 600;
+        font-family: poppins,sans-serif;
+        padding-bottom: 20px;
+      }
+  
+      // .item__left-text
+  
+      &__left-text {
+        color: #888;
+        font-family: poppins,sans-serif;
+        font-size: 17px;
+        text-align: justify;
+
+      }
+  
+      // .item__left-btn
+  
+      &__left-btn a{
+       
+      }
+  
+      // .item__right-bars
+  
+      &__right-bars {
+        
+        margin-bottom: 15px;
+        
+       
+      }
+  
+      // .item__right-info
+  
+      &__right-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      span{
+        font-weight: 600;
+        font-size: 18px;
+        font-family: poppins,sans-serif;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  
+  
+  
+  .Skill {
+
+		// .Skill__line
+
+		&__line {
+      height: 5px;
+      width: 100%;
+      background: lightgray;
+      position: relative;
+		}
+}
+.line {
+
+		// .line__HTML
+
+		&__HTML {
+      content: "";
+      position: absolute;
+      height: 100%;
+      left: 0;
+      right: 0;
+      background: crimson;
+      width: 60%;
+		}
+    &__CSS {
+      content: "";
+      position: absolute;
+      height: 100%;
+      left: 0;
+      right: 0;
+      background: crimson;
+      width: 60%;
+		}
+    &__SCSS {
+      content: "";
+      position: absolute;
+      height: 100%;
+      left: 0;
+      right: 0;
+      background: crimson;
+      width: 50%;
+		}
+    &__JavaScript {
+      content: "";
+      position: absolute;
+      height: 100%;
+      left: 0;
+      right: 0;
+      background: crimson;
+      width: 15%;
+		}
+    &__Figma {
+      content: "";
+      position: absolute;
+      height: 100%;
+      left: 0;
+      right: 0;
+      background: crimson;
+      width: 50%;
+		}
+}
+  //Contact Me
+  
+  .page {
+
+		// .page__section
+
+		&__section {
+
+			// .page__section_5
+
+			&_5 {
+			}
+		}
+}
+.Contacts {
+  background-color: #222;
+		// .Contacts__title-all
+
+		&__title-all {
+      text-align: center;
+      font-size: 55px;
+      font-weight: 500;
+      padding-top: 100px;
+      font-family: ubuntu,sans-serif;
+      color: white;
+    }
+
+		// .Contacts__subtitle
+
+    &__subtitle {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 500;
+      font-family: 'Ubuntu', sans-serif;
+      color: crimson;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      align-items: center;
+      padding-bottom: 50px;
+    }
+    &__subtitle::before{
+      content: '';
+      border-top: 2px solid white;
+      margin: 15px 5px 9px 0 ;
+      flex: 0 1 50px;
+
+    }
+    &__subtitle::after{
+      content: '';
+      border-top: 2px solid white;
+      margin: 17px 0px 12px 5px;
+      flex: 0 1 50px;
+
+    }
+
+		// .Contacts__inner
+
+		&__inner {
+		text-align: center;
+    }
+
+		// .Contacts__item
+
+		&__item-up {
+      
+      padding-bottom: 30px;
+    
+  }
+
+		// .Contacts__item-title
+
+		&__item-title {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      font-family: poppins,sans-serif;
+      color: white;
+    }
+
+		// .Contacts__item-text
+
+		&__item-text {
+      text-align: justify;
+      color: white;
+      font-family: poppins,sans-serif;
+      font-size: 17px;
+      text-align: justify;
+      width: 50%;
+      margin: 0 auto;
+      font-weight: 200;
+      padding-bottom: 100px;
+    }
+
+		// .Contacts__item-name
+
+		&__item-name {
+		}
+}
+.container {
+}
+.contacts {
+
+		// ..contacts__item-ul
+
+		&__item  {
+        
+ 
+
+    }
+}
+
+.fab {
+color: crimson;
+
+
+&:hover{
+  color: white;
+}
+}
+.fa-facebook-square {
+}
+.fa-3x {
+}
+.fas {
+  color: crimson;
+  &:hover{
+    color: white;
+  }
+}
+
+
+  
+
+
+  
+  
+
+  
+  
+  

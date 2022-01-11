@@ -1,0 +1,297 @@
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .About {
+
+		// .About__img
+
+		&__img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+      padding-right: 0;
+      
+    }
+}
+.slider {
+
+  // .slider__item
+
+  &__item {
+  }
+}
+.About {
+
+  // .About__img
+
+  &__img {
+  }
+}
+.slider slick-initialized slick-slider slick-dotted{
+  padding: 0;
+  
+}
+  }
+
+
+//
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {.menu__icon{
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .menu__icon span,
+  .menu__icon::before,
+  .menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: white;
+    
+  }
+  .menu__icon::before,
+  .menu__icon::after{
+    content: "";
+  }
+
+  .menu__icon::before{
+top: 0;
+  }
+  .menu__icon::after{
+bottom: 0;
+  }
+  .menu__icon span {
+    top: 47%;
+    transition: scale(1) translate(0px, -50%);
+  }
+  /*Анимация крестика у бургера*/
+  .menu__icon._active span {
+transform: scale(0) translate(0px, -50%);
+  }
+  .menu__icon._active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0px,-50%) ;
+  }
+  .menu__icon._active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px,50%) ;
+  }
+  
+  .menu__body{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    padding: 100px 30px 30px 30px;
+    transition:  all 0.3s ease 0s;
+    overflow: auto;
+    
+  }
+  .menu__body._active {
+    left: 0;
+  }
+  
+  .menu__body::before{
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: crimson;
+    z-index: 2;
+
+  }
+
+  
+  
+  .menu__list > li{
+    margin: 0 0 30px 0;
+    flex-wrap: wrap;
+  }
+  .menu__list > li:last-child{
+    margin-bottom: 0;
+  }
+  .menu__list > li._active .menu__sub-list{
+display: block;
+  }
+  .menu__link {
+  font-size: 24px;
+}
+.menu__sub-link{
+  display: none;/*?Этим мы убираем выподающее меню*/
+  font-size: 20px;
+  color: black;
+  margin: 20px 0px 0px 0;
+} 
+//home - page__section__1
+.Home {
+
+  // .Home__item
+
+  &__item {
+  }
+}
+.home {
+
+  // .home__title
+
+  &__title {
+  font: size 20px; 
+  }
+
+  // .home__subtitle
+
+  &__subtitle {
+    font-size: 40px;
+  }
+
+  // .home__text
+
+  &__text {
+    font-size: 28px;
+  
+  }
+}
+
+//Contact me
+.Contacts {
+
+  // .Contacts__item
+
+  &__item {
+  }
+
+  // .Contacts__item-title
+
+  &__item-title {
+  }
+
+  // .Contacts__item-text
+
+  &__item-text {
+  width: 100%;
+  }
+}
+
+//SLIDER
+
+
+
+}
+
+
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+  .About {
+
+		// .About__title-all
+
+		&__title-all {
+		}
+
+		// .About__subtitle
+
+		&__subtitle {
+		}
+
+		// .About__inner
+
+		&__inner {
+		flex-direction: column;
+    }
+
+		// .About__item
+
+		&__item {
+      &:last-child{
+        margin-left: -100px;
+      }
+    }
+
+		// .About__fotto
+
+		&__fotto {
+				img {
+          display: block;
+          max-width: 300px;
+          max-height: 300px;
+    }
+    padding-bottom: 20px;
+  }
+
+		// .About__img
+
+
+
+		// .About__title
+
+		&__title {
+		}
+
+		// .About__text
+
+		&__text {
+		}
+
+		// .About__bottom
+
+		&__bottom {
+		}
+
+		// .About__btn
+
+		&__btn {
+		}
+}
+
+
+  //Skills
+  .Skills {
+
+		// .Skills__inner
+
+		&__inner {
+		flex-direction: column;
+    
+    }
+
+		// .Skills__item-left
+
+		&__item-left {
+      flex: 0 1 50%;
+      padding-right: 0px;
+    }
+
+ 
+    &__item-right {
+      }
+  
+  
+}
+//Slider
+
+
+}
+
+
+
+
+
+ 
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {  }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) {  }

@@ -67,7 +67,7 @@ if(menuLinks.length > 0){
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
         
-            //Фенкция для закрытия меню при нажатии на раздел
+            //Функция для закрытия меню при нажатии на раздел
             if(iconMenu.classList.contains('_active')){
                 document.body.classList.remove('_lock');
                 iconMenu.classList.remove('_active');
@@ -85,8 +85,45 @@ if(menuLinks.length > 0){
 
 }
 
-//Слайдер
+
+//Slick-Slider
 $(document).ready(function(){
-    $('.slider').slick();
+	$('.slider').slick({
+		arrows:true,
+		dots:true,
+		slidesToShow:3,
+		autoplay:true,
+		speed:1000,
+		autoplaySpeed:800,
+		responsive:[
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow:2
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow:1
+				}
+			}
+		]
+	});
 });
 
+
+//Tayped animations script
+
+var typed = new Typed(".typing", {
+    strings: ["Front-End"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+var typed = new Typed(".typing-2", {
+    strings: ["I want to be Front-End"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});

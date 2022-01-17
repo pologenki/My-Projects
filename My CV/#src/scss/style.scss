@@ -37,7 +37,7 @@
 @import"obnuleniye";
 @import"header";
 @import"Footer";
-
+@import"slick-slider";
 body{
     height: 100%;
     
@@ -73,8 +73,8 @@ body{
     }
 
     .page__section_1 {
-    background-color: #111;
-    min-height: 600px;
+    background-color: #222;
+    min-height: 650px;
 
     }
     
@@ -107,7 +107,7 @@ body{
         color: white;
         font-family: ubuntu,sans-serif;
         font-size: 27px;
-        padding-bottom: 15px;
+        padding-bottom: 35px;
       }
   
       // .home__subtitle
@@ -116,7 +116,7 @@ body{
         font-size: 65px;
         font-weight: 600;
         font-family: ubuntu,sans-serif;
-        padding-bottom: 15px;
+        padding-bottom: 35px;
         color: white;
       
       }
@@ -126,7 +126,7 @@ body{
       &__text {
         font-size: 40px;
         font-family: ubuntu,sans-serif;
-        padding-bottom: 15px;
+        padding-bottom: 35px;
         color: white;
       
       span{
@@ -167,7 +167,7 @@ body{
     .page__section_2 {
       .About {
        
-
+        padding-bottom: 150px;
 
         // .About__title
     
@@ -226,6 +226,10 @@ body{
           }
         }
     
+        .typing-2{
+          color: crimson;
+        }
+
         .About {
 
           // .About__title
@@ -288,7 +292,85 @@ body{
     
 
   
-//!Slider  
+//!Slider  - My-Project
+
+.Project {
+  background-color: #222;
+  margin-bottom: -55px;
+  // .Project__title
+
+  &__title {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 500;
+    padding-top: 50px;
+    font-family: ubuntu,sans-serif;
+    color: white;
+    }
+
+    // .About__text
+
+    &__subtitle {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 500;
+      font-family: 'Ubuntu', sans-serif;
+      color: crimson;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      align-items: center;
+      padding-bottom: 50px;
+
+    } 
+
+    &__subtitle::before{
+      content: '';
+      border-top: 2px solid white;
+      margin: 15px 5px 9px 0 ;
+      flex: 0 1 50px;
+
+    }
+    &__subtitle::after{
+      content: '';
+      border-top: 2px solid white;
+      margin: 17px 0px 12px 5px;
+      flex: 0 1 50px;
+
+    }
+}
+
+
+
+
+
+.slider {
+
+  // .slider__item
+
+  &__item {
+    color: white;
+    text-align: center;
+    padding: 70px 10px;
+  }
+
+  // .slider__item-title
+
+  &__item-title {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px;
+  }
+
+  // .slider__item-text
+
+  &__item-text {
+  
+  }
+}
+.filter {
+}
 
 
     

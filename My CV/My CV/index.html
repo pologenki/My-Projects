@@ -22,7 +22,10 @@
     <!--Подключаем сторонние програмы через CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     
-    <!---->
+    <!--Подключение Slick-slider-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    
 
     
 </head>
@@ -50,10 +53,10 @@
                         <a data-goto=".page__section_3" href="#" class="menu__link">My Projects</a>
                     </li>
                     <li>
-                        <a data-goto=".page__section_3" href="#" class="menu__link">My skills</a>
+                        <a data-goto=".page__section_4" href="#" class="menu__link">My skills</a>
                     </li>
                     <li>
-                        <a data-goto=".page__section_3" href="#" class="menu__link">Contact</a>
+                        <a data-goto=".page__section_5" href="#" class="menu__link">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -68,7 +71,7 @@
             <div class="Home__item">
                 <div class="home__title">Hello, my name is</div>
                 <div class="home__subtitle">Konstantin Pologenki</div>
-                <div class="home__text">I want to be <span>Front-End</span></div>
+                <div class="home__text">I want to be <span class="typing"></span></div>
                 <div class="home__button">
                     <div class="home__btn"><a href="">Download CV</a></div>
                 </div>
@@ -87,7 +90,7 @@
                 </div>
                 </div>
                 <div class="About__item">
-                    <div class="About__title">I'm Konstantin and i want to be <span>Front-End</span> </div>
+                    <div class="About__title">I'm Konstantin and <span class="typing-2"></span> </div>
                     <div class="About__text"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur alias ducimus eos consequatur. Dolorum nihil quis optio ullam, totam distinctio voluptate perspiciatis assumenda nobis laborum, sit magnam mollitia aspernatur possimus.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nisi magnam in minus consequuntur aliquid, quod adipisci eius, quia quo similique? Nam quis est dicta similique nulla officia omnis dolorem!
                     </p></div>
@@ -102,23 +105,39 @@
         </div>
     </section>
     <section class="page__section page__section_3 ">
-         <div class="slider">
-             <div class="slider__item">
-                 <img src="img/profile-1.png" alt="">
-             </div>
-             <div class="slider__item">
-                <img src="img/profile-1.png" alt="">
+            
+            
+        <div class="Project">
+            <div class="Project__title"><h1>My projekts</h1></div>
+            <div class="Project__subtitle"><h2>my works</h2> </div>
+        </div>
+            
+        <div class="slider">
+
+            
+            <div class="slider__item filter">
+                <img src="img/Hero.png" alt="">
+                <div class="slider__item-title">My Firt Project</div>
+                
+                
             </div>
             <div class="slider__item">
-                <img src="img/profile-1.png" alt="">
+                <img src="img/Hero.png" alt="">
+                <div class="slider__item-title">My Firt Project</div>
+                
+            </div>
+            <div class="slider__item filter">
+                <img src="img/Hero.png" alt="">
+                <div class="slider__item-title">My Firt Project</div>
+                
             </div>
             <div class="slider__item">
-                <img src="img/profile-1.png" alt="">
+                <img src="img/Hero.png" alt="">
+                <div class="slider__item-title">My Firt Project</div>
+                
             </div>
-            <div class="slider__item">
-                <img src="img/profile-1.png" alt="">
-            </div>
-         </div>
+        </div>
+    
     </section>
         
         
@@ -246,7 +265,10 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
-<script src="js/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
 <script src="js/script.js"></script>
 
 

@@ -38,14 +38,14 @@
 @import"header";
 @import"Footer";
 @import"slick-slider";
+@import"mycv.scss";
 body{
     height: 100%;
     
   
   }
   
-  .wrapper {
-  }
+  
   
   .container {
   max-width: 1180px;
@@ -238,7 +238,7 @@ body{
             font-size: 25px;
             font-weight: 600;
             font-family: poppins,sans-serif;
-            padding-bottom: 20px;
+            
           }
       
           // .About__text
@@ -248,7 +248,7 @@ body{
             font-family: poppins,sans-serif;
             font-size: 17px;
             text-align: justify;
-
+            padding-top: 30px;
 
           }
       }
@@ -516,8 +516,21 @@ body{
       left: 0;
       right: 0;
       background: crimson;
-      width: 60%;
-		}
+      width: 20%;
+
+    
+    }
+
+      @keyframes crimson-line{
+        from{
+          left:0px;
+        }
+
+        to{
+          left: 500px;
+        }
+      }
+
     &__CSS {
       content: "";
       position: absolute;

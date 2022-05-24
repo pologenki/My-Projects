@@ -122,7 +122,7 @@ var typed = new Typed(".typing", {
     loop: true
 });
 var typed = new Typed(".typing-2", {
-    strings: ["I want to be Front-End"],
+    strings: ["Konstantin Pologenki"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true

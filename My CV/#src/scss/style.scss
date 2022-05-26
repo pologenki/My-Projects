@@ -167,7 +167,7 @@ body{
     .page__section_2 {
       .About {
        
-        padding-bottom: 150px;
+        
 
         // .About__title
     
@@ -246,7 +246,7 @@ body{
           &__text {
             color: #888;
             font-family: poppins,sans-serif;
-            font-size: 17px;
+            font-size: 20px;
             text-align: justify;
             padding-top: 30px;
 
@@ -297,6 +297,7 @@ body{
 .Project {
   background-color: #222;
   margin-bottom: -55px;
+  margin-top: 150px;
   // .Project__title
 
   &__title {
@@ -342,7 +343,11 @@ body{
 }
 
 
-
+.slider__item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 
 .slider {
@@ -353,6 +358,15 @@ body{
     color: white;
     text-align: center;
     padding: 70px 10px;
+  
+    a{
+      
+        display: block;
+        width: 100%;
+        height: 100%;
+      
+    }
+
   }
 
   // .slider__item-title
@@ -372,9 +386,16 @@ body{
 .filter {
 }
 
+.a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 
     
 //!слайдер //   
+
 
     .Skills {
 
@@ -456,7 +477,7 @@ body{
       &__left-text {
         color: #888;
         font-family: poppins,sans-serif;
-        font-size: 17px;
+        font-size: 20px;
         text-align: justify;
 
       }
@@ -516,7 +537,7 @@ body{
       left: 0;
       right: 0;
       background: crimson;
-      width: 20%;
+      width: 60%;
 
     
     }
@@ -565,7 +586,7 @@ body{
       left: 0;
       right: 0;
       background: crimson;
-      width: 50%;
+      width: 60%;
 		}
 }
   //Contact Me
@@ -608,7 +629,7 @@ body{
       justify-content: center;
       padding-top: 10px;
       align-items: center;
-      padding-bottom: 50px;
+      padding-bottom: 30px;
     }
     &__subtitle::before{
       content: '';
@@ -635,7 +656,7 @@ body{
 
 		&__item-up {
       
-      padding-bottom: 30px;
+      padding-bottom: 100px;
     
   }
 
@@ -655,12 +676,12 @@ body{
       text-align: justify;
       color: white;
       font-family: poppins,sans-serif;
-      font-size: 17px;
+      font-size: 20px;
       text-align: justify;
       width: 50%;
       margin: 0 auto;
       font-weight: 200;
-      padding-bottom: 100px;
+      padding-bottom: 30px;
     }
 
 		// .Contacts__item-name
@@ -700,8 +721,14 @@ color: crimson;
   }
 }
 
-
+.fa-skype{
+  padding-right: 0px;
+}
   
+
+
+
+
 
 
   

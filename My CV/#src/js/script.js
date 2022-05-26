@@ -116,7 +116,7 @@ $(document).ready(function(){
 //Tayped animations script
 
 var typed = new Typed(".typing", {
-    strings: ["Front-End"],
+    strings: ["Front-End Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true

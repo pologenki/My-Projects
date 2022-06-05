@@ -678,6 +678,11 @@ max-width: 768px;
 }
 
 @media (max-width: 999px) { 
+
+  .we-do{
+    flex-wrap: wrap;
+  }
+  
 .header__title__h1{
   font-size: 55px;
 

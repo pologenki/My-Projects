@@ -1,0 +1,323 @@
+
+
+
+
+//!Tools Sectiion__1
+
+.Tools {
+
+    // .Tools__section
+
+    &__section {
+
+        // .Tools__section_1
+
+        &_1 {
+        }
+    }
+
+    // .Tools__inner
+
+    &__inner {
+    display: flex;
+    }
+
+    // .Tools__left
+
+    &__left {
+    padding-top: 60px;
+
+    }
+
+    // .Tools__title
+
+    &__title {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 62px;
+        align-items: center;
+        color: #1A2578;
+    
+    }
+
+    // .Tools__text
+
+    &__text {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        color: #484C63;
+    
+    }
+
+    // .Tools__right
+
+    &__right {
+    }
+
+    // .Tools__img
+
+    &__img {
+    }
+}
+.img {
+
+    // .img__all
+
+    &__all {
+    }
+}
+
+
+
+//!Tools Sectiion__1
+
+
+//!Cookieyes Section__2
+.Cookieyes {
+padding-top: 100px;
+    // .Cookieyes__inner
+
+    &__inner {
+    display: flex;
+    justify-content: space-between;
+    
+    }
+
+    // .Cookieyes__left
+
+    &__left {
+    padding-top: 60px;
+    padding-right: 80px;
+    
+    }
+
+    // .Cookieyes__title
+
+    &__title {
+    padding-bottom: 20px;
+    }
+
+    // .Cookieyes__text
+
+    &__text {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: #484C63;
+    
+        p{
+            padding-top: 30px;
+        }
+    }
+
+    &__btn{
+        padding-top: 50px;
+    }
+
+
+    // .Cookieyes__right
+
+    &__right {
+    }
+
+    // .Cookieyes__img
+
+    &__img {
+    }
+}
+.page {
+
+    // .page__section
+
+    &__section {
+
+        // .page__section_2
+
+        &_2 {
+        }
+    }
+}
+.img {
+
+    // .img__all
+
+    &__all {
+    }
+}
+//!Cookieyes Section__2
+
+
+
+
+//!Webloffee Section__3
+.Webloffee {
+padding-top: 100px;
+    // .Webloffee__inner
+
+    &__inner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    }
+
+    // .Webloffee__left
+
+    &__left {
+        padding-left: 120px;
+        padding-top: 50px;
+    }
+
+    // .Webloffee__title
+
+    &__title {
+    padding-bottom: 40px;
+    }
+
+    // .Webloffee__text
+
+    &__text {
+        padding-bottom: 40px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: #484C63;
+        
+    }
+
+    // .Webloffee__btn
+
+    &__btn {
+    }
+
+    // .Webloffee__right
+
+    &__right {
+    }
+
+    // .Webloffee__img
+
+    &__img {
+    }
+}
+.page {
+
+    // .page__section
+
+    &__section {
+
+        // .page__section_3
+
+        &_3 {
+        }
+    }
+}
+.btn {
+}
+.img {
+
+    // .img__all
+
+    &__all {
+    }
+}
+//!Webloffee Section__3
+
+
+
+
+//!Future Section__4
+.Future {
+padding-top: 150px;
+    // .Future__inner
+
+    &__inner {
+text-align: center; 
+align-items: center; 
+
+    }
+
+    // .Future__left
+
+    &__left {
+    }
+
+    // .Future__title
+
+    &__title {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 62px;
+        align-items: center;
+        text-align: center;
+        color: #1A2578;
+    }
+
+    // .Future__text
+
+    &__text {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        color: #484C63;
+    padding-bottom: 40px;
+    }
+}
+.page {
+
+    // .page__section
+
+    &__section {
+
+        // .page__section_4
+
+        &_4 {
+        }
+    }
+}
+.Future {
+
+    // .home__btn
+
+    &__btn {
+    display: flex;
+    justify-content: center;
+   padding-bottom: 100px;
+}
+
+    // .home__btn-item-1
+
+
+    .btn-1 {
+        padding:14px 32px;
+        background: #BF0830;
+        margin-right: 15px;
+        border-radius: 5px;
+          color: white;
+        &:hover{
+          background-color: white;
+          border: 1px solid #BF0830 ;
+          color: #BF0830;
+        }
+    
+    }
+
+
+}
+
+
+
+//!Future Section__4

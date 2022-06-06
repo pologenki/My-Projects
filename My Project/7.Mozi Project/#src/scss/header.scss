@@ -1,5 +1,5 @@
 .header {
-
+position: fixed      ;
   top: 0;
   left: 0;
   width: 100%;
@@ -7,7 +7,7 @@
   /*background-size: cover;
     padding:0 0 121px 0 ;
     background-position: right;*/
-    
+    background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
   }
   
   .header__container {
@@ -169,7 +169,7 @@ transform: scale(0) translate(0px, -50%);
     left: 0;
     height: 70px;
     z-index: 2;
-    background-color: white;
+    
     
      
   }
@@ -180,6 +180,7 @@ transform: scale(0) translate(0px, -50%);
     margin: 0 0 30px 0;
     flex-direction: column;
     line-height: 62px;
+
   }
   .menu__list > li:last-child{
     margin-bottom: 0;
@@ -198,3 +199,5 @@ display: block;
 }
 
  }
+
+ 

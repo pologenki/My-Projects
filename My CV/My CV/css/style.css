@@ -364,6 +364,10 @@ body._touch .menu__link {
   max-width: 100%;
 }
 
+a {
+  color: white;
+}
+
 .box-container {
   max-width: 1180px;
   padding: 0px 30px;

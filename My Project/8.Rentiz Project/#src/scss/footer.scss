@@ -1,0 +1,150 @@
+
+footer {
+    background-color: #1A242F;
+    height: 100%;
+}
+
+    .footer {
+        
+		// .footer__inner
+
+		&__inner {
+		display: flex;
+        padding-top: 139px;
+       
+    }
+
+		// .footer__inner-item
+
+		&__inner-item {
+		padding-right: 130px;
+        
+        &:last-child{
+            padding-right: 0px;
+        }
+    }
+
+		// .footer__item-title
+     
+
+
+		&__item-title {
+            font-family: 'Work Sans';
+            font-size: 26px;
+            line-height: 126%;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+            padding-bottom: 11px;
+        }
+
+		// .footer__item-text
+
+		&__item-text {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 170%;
+            color: #D6D6D6;
+            
+        }
+
+		// .footer__item-ulSocial
+
+		&__item-ulSocial {
+		display: flex;
+        }
+
+		// .footer__item-ul
+
+		&__item-ul {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 170%;
+            color: #D6D6D6;
+            padding-bottom: 125px;
+        }
+}
+.fa-brands {
+color: #555E68;
+&:hover{
+    color: white;
+    transition: all 1s ease 0s;
+
+}
+
+
+}
+.fa-facebook {
+    padding-right: 30px;
+    padding-top: 32px;
+    padding-bottom: 30px;
+}
+.fa-instagram {
+    padding-right: 30px;
+    padding-top: 32px;
+    padding-bottom: 30px;
+}
+.fa-twitter {
+    padding-right: 30px;
+    padding-top: 32px;
+    padding-bottom: 30px;
+}
+.fa-youtube {
+    padding-right: 30px;
+    padding-top: 32px;
+    padding-bottom: 30px;
+}
+
+
+.footer__item-logotitle{
+    z-index: 50;
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 39px;
+    color: white;
+    &:first-letter{
+      color: #1AA090;
+    }
+padding-bottom: 22px;
+}
+
+//?Subtitle
+
+.footer {
+
+
+
+    // .footer__subtitle-inner
+
+    &__subtitle-inner {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 2px solid 
+    #303A44;
+}
+}
+.subtitle {
+
+    // .subtitle__inner-item
+
+    &__inner-item {
+    
+    }
+
+    // .subtitle__item-text
+
+    &__item-text {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 170%;
+        color: #D6D6D6;
+        padding: 20px 0;
+    ;
+}
+}

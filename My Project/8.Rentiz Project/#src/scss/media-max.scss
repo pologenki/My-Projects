@@ -1,0 +1,223 @@
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+    //!Section__2 Choose
+    .choose__arrow{
+        width: 70px;
+        height: 800px;
+    }
+ 
+    .item__secondcontent-text{
+        font-size: 20px;
+        max-width: 800px;
+    }
+
+    .right__item-secondcontent{
+        padding-left: 250px;
+        
+    }
+
+
+//!Section__2 Choose
+
+
+//!Section__3 Findhome
+.Findhome__inner{
+padding-top: 70px;
+}
+
+//!Section__3 Findhome
+}
+
+
+
+@media (max-width: 468px) { 
+    //!Section__2 Choose
+    .choose__title{
+        font-family: 'Work Sans';
+        font-size: 30px;
+        text-align: center;
+        align-items: center;
+        color: #FFFFFF;
+        margin-left: -190px;
+    }
+
+
+
+    //!Section__2 Choose
+}
+
+@media (max-width:767px) {
+    //!Section__2 Choose
+    .choose__arrow{
+        width: 200px;
+        height: 800px;
+    }
+
+    .choose__title{
+        margin-left: -180px;
+    }
+
+    .right__item-secondcontent{
+        padding-left: 130px;
+        font-size: 20px;
+        
+    }
+    .item__secondcontent-text{
+        font-size: 20px;
+    }
+ 
+
+//!Section__2 Choose
+
+
+//!Section__3 Findhome
+.Findhome-img{
+
+    padding-bottom: 30px;
+
+}
+
+.Findhome__inner-item{
+    padding-right: 0px;
+
+    &:last-child{
+        padding-left: 0px;
+        padding-bottom: 100px;
+    }
+}
+
+//!Section__3 Findhome
+
+
+.rentiz__item-title{
+    width: 100%;
+    font-size: 30px;
+    padding-bottom: 10px;
+    }
+
+    .Rentiz__item-text{
+        width: 100%;
+    }
+
+
+.Rentiz__item-btn{
+    margin-bottom: 100px;
+}
+}
+
+.footer__inner{
+    flex-wrap: wrap;
+    justify-content: center;
+            &:first-child{
+                flex-wrap: nowrap;
+            }
+            
+        }
+
+@media (max-width: 833px){
+    .footer__inner{
+        flex-direction: column;
+
+
+                
+            }
+            .footer__item-ul{
+                padding-bottom: 50px;
+            }
+        }
+
+
+@media (max-width: 992px) { 
+//!Section__2 Choose
+    
+.right__item-secondcontent{
+   margin-left: -300px;
+}
+ 
+//!Section__2 Choose
+}
+
+@media (max-width: 1033px) { 
+
+ }
+
+ @media (max-width: 1235px){
+    .Rentiz__item-btn{
+        margin-bottom: 100px;
+    }
+    .rentiz__item-title{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 126%;
+        color: #FFFFFF;
+        padding-right: 0px;
+        width: 100%;
+        }
+    }
+
+
+
+@media (max-width: 1235px) { 
+//!Section__3 Findhome
+    .Findhome__inner{
+    flex-wrap: wrap;
+}
+
+.Findhome__inner-item{
+    margin: 0 auto;
+}
+
+.Findhome__item-btn{
+    margin-bottom: 100px;
+}
+
+//!Section__3 Findhome
+
+//!Section__4
+.Rentinz__inner{
+flex-wrap: wrap;
+padding-left: 0px;
+}
+
+.Rentinz__item{
+    margin: 0 auto;
+}
+
+.rentiz__item-title{
+
+}
+
+//!Section__4
+
+
+
+//!footer
+
+
+
+    .footer__inner-item{
+    padding-right: 30px ;
+
+    }
+
+
+//!footer
+
+}
+
+
+@media (max-width: 1320px) { 
+  //!Section__2 Choose
+    .right__content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+ 
+  .item__secondcontent-subtext2{
+    padding-bottom: 100px;
+  }
+
+//!Section__2 Choose
+}

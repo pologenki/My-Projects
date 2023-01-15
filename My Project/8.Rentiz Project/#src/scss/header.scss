@@ -61,24 +61,28 @@
   }
     .menu__list {
     display: flex;
-   
+     &:last-child{
+        color: red;
+      }
   }
     .menu__list > li {
     position: relative;
     margin: 0 0 0 40px;
     justify-content: space-between;
     padding: 0px 0px;
+     
       &:hover{
    border-bottom: 4px solid #1AA090 ;
    transition: all 1s ease 0s;
       }
+     
       padding-top: 14px;
   }
     
     .menu__link {
     color: white;
     font-size: 18px;
-    
+   
     }
     
     .menu {
@@ -471,8 +475,9 @@ transform: scale(0) translate(0px, -50%);
  
  
  .menu__list {
-   margin: 0 0 30px 0;
-   flex-direction: column;
+  margin: 0 0 30px 0;
+  flex-wrap: wrap;
+  flex-direction: column;
    line-height: 62px;
 
  }

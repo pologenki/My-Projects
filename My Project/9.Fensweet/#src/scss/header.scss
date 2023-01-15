@@ -1,0 +1,87 @@
+/*!Header__burger*/
+.header {
+    position: fixed; /*?этот момент надо проверить*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background-color: #232536;/*?background:url(../)center no-repeat;*/
+    
+    /*background-size: cover;
+      padding:0 0 121px 0 ;
+      background-position: right;*/
+    
+    }
+    
+    .header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    }
+    
+    .header__logo {
+    z-index: 50;
+    font-size: 23px;
+    font-family: 'Inter';
+    color: white;
+    }
+    
+    .header__menu {
+    }
+    .menu {
+    }
+    .menu__icon {
+    display: none;
+    }
+    
+    
+    .menu__body {
+    
+    }
+    .menu__list {
+        font-family: "inter";
+        color: #fff;
+        font-weight: 600;
+        margin-left: 25px;
+       display: flex;
+    }
+    .menu__list > li {
+    position: relative;
+    margin: 0 0 0 20px;
+    
+}
+    
+    .menu__link {
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter';   
+    font-size: 16px;
+    line-height: 28px;
+    margin-right:24px ;
+
+    }
+
+    .subscribe__menu{
+    margin-right: 0px;
+    padding:16px 48px;
+    background-color: #fff;
+    font-family: 'Sen';
+    font-weight: 700;
+    font-size: 18px;
+    color: #232536;
+    
+    &:hover{
+        background-color: #FFD050;
+        transition: all 1s ease 0s;
+    }
+    }
+
+
+
+
+    
+

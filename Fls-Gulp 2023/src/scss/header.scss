@@ -1,0 +1,204 @@
+/*!Header__burger*/
+.header {
+    position: fixed;
+    /*?этот момент надо проверить*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background-color: #232536;
+    /*?background:url(../)center no-repeat;*/
+
+    /*background-size: cover;
+      padding:0 0 121px 0 ;
+      background-position: right;*/
+
+}
+
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+}
+
+.header__logo {
+    z-index: 50;
+    font-size: 23px;
+    font-family: 'Inter';
+    color: yellow;
+}
+
+.header__menu {}
+
+.menu {}
+
+.menu__icon {
+    display: none;
+}
+
+
+.menu__body {}
+
+.menu__list {
+    font-family: "inter";
+    color: #fff;
+    font-weight: 600;
+    margin-left: 25px;
+    display: flex;
+}
+
+.menu__list>li {
+    position: relative;
+    margin: 0 0 0 20px;
+
+}
+
+.menu__link {
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 28px;
+    margin-right: 24px;
+
+}
+
+.subscribe__menu {
+    margin-right: 0px;
+    padding: 16px 48px;
+    background-color: #fff;
+    font-family: 'Sen';
+    font-weight: 700;
+    font-size: 18px;
+    color: #232536;
+
+    &:hover {
+        background-color: #FFD050;
+        transition: all 1s ease 0s;
+    }
+}
+
+@media (max-width: 768px) {
+
+    //!header__menu
+    .menu__icon {
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .menu__icon span,
+    .menu__icon::before,
+    .menu__icon::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: white;
+
+    }
+
+    .menu__icon::before,
+    .menu__icon::after {
+        content: "";
+    }
+
+    .menu__icon::before {
+        top: 0;
+    }
+
+    .menu__icon::after {
+        bottom: 0;
+    }
+
+    .menu__icon span {
+        top: 47%;
+        transition: scale(1) translate(0px, -50%);
+    }
+
+    /*Анимация крестика у бургера*/
+    .menu__icon._active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+
+    .menu__icon._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .menu__icon._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    .menu__body {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(3, 2, 12, 0.9);
+        padding: 100px 30px 30px 30px;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+
+    }
+
+    .menu__body._active {
+        left: 0;
+    }
+
+    .menu__body::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 70px;
+        background-color: #232536;
+        z-index: 2;
+
+    }
+
+
+
+    .menu__list {
+        margin: 0 0 30px 0;
+        flex-direction: column;
+        padding-bottom: 30px;
+        align-items: center;
+
+
+    }
+
+    .menu__list li {
+        padding-bottom: 40px;
+    }
+
+
+    .menu__list>li:last-child {
+        margin-bottom: 0;
+
+    }
+
+    .menu__list>li._active .menu__sub-list {
+        display: block;
+    }
+
+    .menu__link {
+        font-size: 24px;
+
+    }
+
+
+    //!header__menu
+}

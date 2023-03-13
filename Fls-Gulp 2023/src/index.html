@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="webp">
+@@include('html/head.html',{
+    "title":"Главная"
+})
+
+<body>
+    
+    <!-- ?npm run svgSprive   Командля для консоли если мы хотим создать svgsprite из кортинок-->
+    <!--?npm run dev  режим разработчика-->
+    <!--?npm run build  режим продакшена(то что получит клиент , с уже готовыми картинками шрифтами и тд все аптимезировано)-->
+    <!--?npm run zip  создоет zip формат для заказчика   -->
+    <!--?npm run deploy  Дает возможность заливки файлов на сайт Б но для этого нужно заполнить фаил config/ftp.js-->
+
+
+    @@include('html/header.html',{})
+    <div class="wrapper">
+ <main class="page">
+        
+    <section class="home page__section_1 ">
+            <div class="container">
+
+    </section>
+   
+    <section class="home page__section_2 ">
+        <div class="container">
+    </section>
+
+    <section class="home page__section_3 ">
+        <div class="container">
+    
+    </section>
+
+  
+    </main>
+    </div>
+    @@include('html/footer.html',{})
+    
+    <!--Подключение Jquery-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    
+    <!--Подключение slick-slider-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+
+
+    <script src="js/app.min.js"></script>
+  
+
+
+
+</body>
+</html>

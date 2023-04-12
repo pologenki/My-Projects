@@ -1,5 +1,101 @@
 'use strict';
 
+const myCity = {
+    city: 'New York',
+    country: 'USA'
+}
+
+
+console.log(myCity);
+
+myCity.popular = true;
+
+console.log(myCity);
+
+
+const city = 'Tallinn'
+const myName = 'Konstantin'
+const myAge = 31
+
+const myTest = {
+    city,
+    myName,
+    myAge,
+}
+
+console.log(myTest);
+
+
+const myTown = {
+    city: 'Tartu',
+    cityGreeting: function () {
+        console.log('Holla!!')
+    }
+}
+
+console.log(myTown);
+myTown.cityGreeting();
+
+let a = 5;
+let b = 3;
+
+function sum() {
+    const c = a + b
+    console.log(c)
+}
+sum()
+
+a = 9
+b = 10
+
+sum(a, b)
+
+
+
+/*/
+function first(a, g) {
+    let g = 'Konstantin'
+    a();
+    g();
+}
+
+
+
+function second(b, d) {
+    let c
+    b = 5 * 4
+    d = 2 + 3
+    c = b + d
+    console.log(c)
+    return c
+
+}
+
+function forth(name) {
+    let name = 'Konstantin';
+    console.log(name)
+
+
+}
+
+
+
+first(second);
+//second();
+
+
+
+
+
+/*
+const myCity = {
+    country: 'USA',
+    city: 'New York',
+    popular: true
+}
+
+/* 
+
 
 let a = 5
 let b = 3
@@ -193,4 +289,4 @@ kos.forEach(function (el) {
 
  //! Интструкции if else
 
- 
+ */

@@ -1,0 +1,36 @@
+.footer {
+    
+    // .footer__item
+
+    &__item {
+    padding-top: 15px;
+    }
+
+    // .footer__text
+
+    &__text {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: poppins,sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing:10px;
+ span{
+        color: crimson;
+    }
+}
+   
+}
+
+
+
+.fa-facebook-square {padding-right: 20px;}
+
+.fa-phone-square-alt {padding-right: 20px;}
+
+.fa-whatsapp-square {padding-right: 20px;}
+
+.fa-telegram {padding-right: 20px;}
+
+
+

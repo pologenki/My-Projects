@@ -1,4 +1,4 @@
-
+ 
 //Slick-Slider
 $(document).ready(function(){
 	$('.slider').slick({

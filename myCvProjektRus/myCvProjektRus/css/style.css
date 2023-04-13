@@ -16,6 +16,7 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin-bottom: 50px;
 }
 
 /*import*/
@@ -245,6 +246,22 @@ body._touch .menu__link {
 
 .footer__text span {
   color: crimson;
+}
+
+.fa-facebook-square {
+  padding-right: 20px;
+}
+
+.fa-phone-square-alt {
+  padding-right: 20px;
+}
+
+.fa-whatsapp-square {
+  padding-right: 20px;
+}
+
+.fa-telegram {
+  padding-right: 20px;
 }
 
 /* Основные стили */
@@ -479,8 +496,32 @@ a {
   color: #888;
 }
 
+.back__btn a {
+  padding: 15px 46px;
+  background-color: crimson;
+  display: inline-block;
+  border-radius: 7px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  border: 2px solid crimson;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  bottom: 0;
+  right: 0;
+}
+
+.back__btn a:hover {
+  background: none;
+  color: black;
+}
+
 body {
   height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 .container {
@@ -507,9 +548,60 @@ body {
   padding: 70px 0 30px 0;
 }
 
+.section {
+  display: grid;
+  place-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 100vh;
+}
+
 .page__section_1 {
   background-color: #222;
-  min-height: 650px;
+  min-height: 100vh;
+}
+
+.hidden {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
+}
+
+.show {
+  opacity: 1;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.home__btn-lang {
+  position: relative;
+}
+
+.language__btn a {
+  padding: 15px 46px;
+  background-color: crimson;
+  display: inline-block;
+  border-radius: 7px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  border: 2px solid crimson;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .Home__inner {
@@ -519,10 +611,16 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 220px;
 }
 
 .Home__item {
-  padding: 100px 0 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home__title {
@@ -656,6 +754,7 @@ body {
   background-color: #222;
   margin-bottom: -55px;
   margin-top: 150px;
+  min-height: 240px;
 }
 
 .Project__title {
@@ -897,7 +996,7 @@ body {
   left: 0;
   right: 0;
   background: crimson;
-  width: 15%;
+  width: 40%;
 }
 
 .line__Figma {
@@ -999,6 +1098,7 @@ body {
 
 .fas {
   color: crimson;
+  padding-right: 20px;
 }
 
 .fas:hover {
@@ -1006,7 +1106,7 @@ body {
 }
 
 .fa-skype {
-  padding-right: 0px;
+  padding-right: 20px;
 }
 
 .img__img {
@@ -1015,6 +1115,27 @@ body {
 
 .slider__item {
   display: block;
+}
+
+.footer-iconTop a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.fa-square-caret-up {
+  color: crimson;
+  padding-bottom: 40px;
+}
+
+.fa-square-caret-up:hover {
+  color: white;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 @media (min-width: 768px) {

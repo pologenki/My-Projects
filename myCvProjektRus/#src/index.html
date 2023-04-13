@@ -20,69 +20,62 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <!--Подключаем сторонние програмы через CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!--Подключение Slick-slider-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-    
+
+    <!--Подключение Анимаций-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     
 </head>
 <body>
 
 <div class="wrapper">
-<header class="header">
-    <div class="header__container">
-        <a href="" class="header__logo">
-            Portfolio
-        </a>
-        <div class="header__menu menu">
-            <div class="menu__icon">
-                <span></span>
-            </div>
-            <nav class="menu__body">
-                <ul class="menu__list">
-                    <li>
-                        <a data-goto=".page__section_1"  href="#" class="menu__link">Home</a>
-                    </li>
-                    <li>
-                        <a data-goto=".page__section_2" href="#" class="menu__link">About</a>
-                    </li>
-                    <li>
-                        <a data-goto=".page__section_3" href="#" class="menu__link">My Projects</a>
-                    </li>
-                    <li>
-                        <a data-goto=".page__section_4" href="#" class="menu__link">My skills</a>
-                    </li>
-                    <li>
-                        <a data-goto=".page__section_5" href="#" class="menu__link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>    
+@@include('_header.html')    
 
 <main class="page">
-    <section class="Home page__section_1 ">
+    <section class=" page__section_1 ">
         <div class="container">
         <div class="Home__inner">
             <div class="Home__item">
-                <div class="home__title">Hello, my name is</div>
-                <div class="home__subtitle">Konstantin Pologenki</div>
-                <div class="home__text">I'm willing to become <span class="typing"></span></div>
+                <div class=" home__title ">Hello, my name is</div>
+                <div class=" home__subtitle">Konstantin Pologenki</div>
+                <div class="  home__text">I'm willing to become <span class="typing"></span></div>
                 <div class="home__button">
-                    <div class="home__btn"><a href="mycv.html">Get to know me</a></div>
+                    <div class="home__btn hidden"><a href="mycv.html">Get to know me</a></div>
+                </div>
+            <div class="Contacts__item-up">
+                <div class="contacts__item">
+                    <a href="https://www.facebook.com/zima.poikokopl"><i class="hidden fab fa-facebook-square fa-3x"></i></a>
+                    <a href="tel:+37255668060"><i class="hidden fas fa-phone-square-alt fa-3x"></i></a>
+                    <a href="https://wa.me/+3725107391
+                                            "><i class="hidden fab fa-whatsapp-square fa-3x"></i></a>
+                    <a href="https://telegram.me/+3725107391"><i class="hidden fab fa-telegram fa-3x"></i></a>
+                    <a href="skype:kostyan-dnb?call"><i class="hidden fab fa-skype fa-3x"></i></a>
+                    <a href="mailto:pologenki@gmail.com
+                                        "><i class="hidden fas fa-envelope-square fa-3x"></i></a>
                 </div>
             </div>
         </div>
+            
+            </div>
+        <div class="hidden home__item-right">
+                       <div class="home__btn-lang">
+                        <div id="" class="language__btn"><a href="rusIndex.html">На Русском</a></div>
+                    </div>
+                </div>
     </section>
-    <section class="page__section page__section_2 ">
+    <section class=" page__section_2 ">
         <div class="About">
             <div class="container">
-                <div class="About__title-all"><h1>About me</h1></div>
-                <div class="About__subtitle"><h2>Who Am I</h2> </div>
+                <div class="hidden About__title-all"><h1>About me</h1></div>
+                <div class="hidden About__subtitle"><h2>Who Am I</h2> </div>
             <div class="About__inner">
                 <div class="About__item ">
                 <div class="About__fotto  ">
@@ -94,7 +87,7 @@
                     <div class="About__text"><p>Hi! My name is Konstantin. I'm from Estonia,Tallinn. What can I say about my self. Im very creative and persistent. I carry active life style, do sports, especially swiming. Also like traveling. Recently I got into IT industry. About 5 months I'm actevly researching front end development. 
                     </p></div>
                     <div class="About__bottom">
-                        <div class="About__btn">
+                        <div class=" hidden About__btn">
                         <a href="mycv.html">Get to know me</a>    
                         </div>
                     </div>
@@ -103,12 +96,12 @@
         </div>
         </div>
     </section>
-    <section class="page__section page__section_3 ">
+    <section class=" page__section_3 ">
             
             
         <div class="Project">
-            <div class="Project__title"><h1>My projects</h1></div>
-            <div class="Project__subtitle"><h2>my works</h2> </div>
+            <div class="hidden Project__title"><h1>My projects</h1></div>
+            <div class="hidden Project__subtitle"><h2>my works</h2> </div>
         </div>
             
         <div class="slider">
@@ -156,11 +149,11 @@
 
     </div>
     </section>
-    <section class="page__section page__section_4 ">
+    <section class=" page__section_4 ">
         <div class="Skills">
             <div class="container">
-                <div class="Skills__title-all"><h1>My skills</h1></div>
-                <div class="Skills__subtitle"><h2>What I know</h2> </div>
+                <div class="hidden Skills__title-all"><h1>My skills</h1></div>
+                <div class="hidden Skills__subtitle"><h2>What I know</h2> </div>
                 <div class="Skills__inner">
                     <div class="Skills__item-left">
                         <div class="item__left-title">About My Skills</div>
@@ -200,7 +193,7 @@
                         <div class="item__right-bars">
                             <div class="item__right-info">
                                 <span>JavaScript</span>
-                                <span>15%</span>
+                                <span>40%</span>
                             </div>
                             <div class="Skill__line">
                                 <div class="line__JavaScript "></div>
@@ -222,10 +215,10 @@
         </div>
     </section>
 
-    <section class="page__section page__section_5 ">
+    <section class=" page__section_5 ">
         <div class="Contacts">
             <div class="container">
-                <div class="Contacts__title-all"><h1>Contact Me</h1></div>
+                <div class=" Contacts__title-all"><h1>Contact Me</h1></div>
                 <div class="Contacts__subtitle"><h2>Get in Touch</h2> </div>
                 <div class="Contacts__inner">
                                         <div class="Contacts__item">
@@ -233,32 +226,33 @@
                         <div class="Contacts__item-text">If you have any questions, please feel free to contact me any time, using following links: </div>
                     </div>
                     <div class="Contacts__item-up">
-                        <div class=".contacts__item">
-                            <a href="https://www.facebook.com/zima.poikokopl"><i class="fab fa-facebook-square fa-3x"></i></a>
-                            <a href="tel:+37255668060"><i class="fas fa-phone-square-alt fa-3x"></i></a>
+                        <div class="contacts__item ">
+                            <a href="https://www.facebook.com/zima.poikokopl"><i class="hidden fab fa-facebook-square fa-3x "></i></a>
+                            <a href="tel:+37255668060"><i class="hidden fas fa-phone-square-alt fa-3x"></i></a>
                             <a href="https://wa.me/+3725107391
-                                "><i class="fab fa-whatsapp-square fa-3x"></i></a>
-                            <a href="https://telegram.me/+3725107391"><i class="fab fa-telegram fa-3x"></i></a>
-                            <a href="skype:kostyan-dnb?call"><i class="fab fa-skype fa-3x"></i></a>
+                                "><i class="hidden fab fa-whatsapp-square fa-3x"></i></a>
+                            <a href="https://telegram.me/+3725107391"><i class="hidden fab fa-telegram fa-3x"></i></a>
+                            <a href="skype:kostyan-dnb?call"><i class=" hidden fab fa-skype fa-3x"></i></a>
                             <a href="mailto:pologenki@gmail.com
-                            "><i class="fas fa-envelope-square fa-3x"></i></a>
+                            "><i class="hidden fas fa-envelope-square fa-3x"></i></a>
                         </div>
                     </div>
                     
 
                 </div>
+            
+            </div>
+            <div class="hidden footer-iconTop">
+                <a data-goto=".page__section_1" href=""><i class="fa-solid fa-square-caret-up fa-3x"></i></a>
             </div>
         </div>
+    
     </section>
     
 </main>
 
 
-<footer>
-    <div class="footer__item">
-        <div class="footer__text"> Created By <span>Pologenki</span> |  2022 </div>
-    </div>
-</footer>
+@@include('_footer.html')
 </div>
 
 

@@ -494,6 +494,7 @@ a {
   font-family: ubuntu, sans-serif;
   font-size: 20px;
   color: #888;
+  line-height: 1.4;
 }
 
 .back__btn a {
@@ -602,6 +603,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  margin-top: 40px;
 }
 
 .Home__inner {
@@ -730,6 +732,7 @@ body {
   font-size: 20px;
   text-align: justify;
   padding-top: 30px;
+  line-height: 1.4;
 }
 
 .page__section_2 .About__btn a {
@@ -907,6 +910,7 @@ body {
   font-family: poppins, sans-serif;
   font-size: 20px;
   text-align: justify;
+  line-height: 1.4;
 }
 
 .item__right-bars {
@@ -1086,6 +1090,7 @@ body {
   margin: 0 auto;
   font-weight: 200;
   padding-bottom: 30px;
+  line-height: 1.4;
 }
 
 .fab {
@@ -1403,5 +1408,11 @@ body {
 
   .page__section_2 .About .About__title {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home__inner {
+    padding-top: 100px;
   }
 }

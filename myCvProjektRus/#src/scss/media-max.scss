@@ -1,4 +1,11 @@
 // Small devices (landscape phones, 576px and up)
+
+@media (max-width: 400px){
+    .home__inner{
+        padding-top: 100px;
+    }
+}
+
 @media (max-width: 576px) {
   .About {
 

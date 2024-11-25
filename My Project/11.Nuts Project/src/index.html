@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="webp">
+@@include('html/head.html',{
+    "title":"Главная"
+})
+
+<body>
+    
+    <!-- ?npm run svgSprive   Командля для консоли если мы хотим создать svgsprite из кортинок-->
+    <!--?npm run dev  режим разработчика-->
+    <!--?npm run build  режим продакшена(то что получит клиент , с уже готовыми картинками шрифтами и тд все аптимезировано)-->
+    <!--?npm run zip  создоет zip формат для заказчика   -->
+    <!--?npm run deploy  Дает возможность заливки файлов на сайт Б но для этого нужно заполнить фаил config/ftp.js-->
+
+
+    @@include('html/header.html',{})
+    <div class="wrapper">
+ <main class="page">
+        
+    <section class="home page__section_1 ">
+            <div class="container">
+                    <div class="main__content">
+                        <div class="container">
+                            <div class="main__content-inner">
+                                <div class="main__content-item">
+                                    <div class="main__content-item-title">Order food from favourite restaurants near you.
+                                    </div>
+                                    <div class="main__content-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Etiam et purus a odio finibus bibendum amet leo.</div>
+                                   <a href=""><div class="main__content-item-btn">Learn more<i class="fa-solid fa-chevron-right"></i></div></a>
+                                </div>
+                                <div class="main__content-item"><img class="main-img" src="/img/header.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </section>
+   
+    
+<!--
+<section class="home page__section_ ">
+    <div class="container">
+        <div class="statistics">
+       <div class="statistics__title">Contact us</div>
+        <ul class="statistics__ul">
+        <li><a href=""><img class="telegramIMG" src="img/telegram.svg" alt=""></a></li>
+        <li><a href=""><img class="telegramIMG" src="img/envelope-regular.svg" alt=""></a></li>
+        <li><a href=""><img class="telegramIMG" src="img/whatsapp.svg" alt=""></a></li>
+        <li><a href=""><img class="telegramIMG" src="img/weixin.svg" alt=""></a></li>
+       </ul>
+    </div>
+</div>
+</section>
+ -->   
+
+
+    <section class="home page__section_2 ">
+            <div class="container">
+                <div class="card-inner">
+                    <div class="card-item">
+                        <article class="card">
+                    <header class="card__thumb">
+                        <a href="#"><img
+                                src="img/cards/bobi.jpg"></a>
+                    </header>
+                    <div class="card__body">
+                        <div class="card__category"><a href="#">pet</a></div>
+                        <h2 class="card__title"><a href="#">an ice cream sundae party！</a></h2>
+                        <div class="card__subtitle">an ice cream sundae party！</div>
+                        <p class="card__description">5. Pour the mixture into a non-stick container and then freeze overnight. Take
+                            treating your dog a step further by turning it into an ice cream sundae party!</p>
+                    </div>
+                        </article>
+                        <article class="card">
+                                    <header class="card__thumb">
+                                        <a href="#"><img
+                                                src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" /></a>
+                                    </header>
+                                    <div class="card__body">
+                                        <div class="card__category"><a href="#">pet</a></div>
+                                        <h2 class="card__title"><a href="#">an ice cream sundae party！</a></h2>
+                                        <div class="card__subtitle">an ice cream sundae party！</div>
+                                        <p class="card__description">5. Pour the mixture into a non-stick container and then freeze overnight. Take
+                                            treating your dog a step further by turning it into an ice cream sundae party!</p>
+                                    </div>
+                        </article>
+                        <article class="card">
+                                    <header class="card__thumb">
+                                        <a href="#"><img
+                                                src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" /></a>
+                                    </header>
+                                    <div class="card__body">
+                                        <div class="card__category"><a href="#">pet</a></div>
+                                        <h2 class="card__title"><a href="#">an ice cream sundae party！</a></h2>
+                                        <div class="card__subtitle">an ice cream sundae party！</div>
+                                        <p class="card__description">5. Pour the mixture into a non-stick container and then freeze overnight. Take
+                                            treating your dog a step further by turning it into an ice cream sundae party!</p>
+                                    </div>
+                        </article>
+                    </div>
+                </div>
+                    <div class="card-item">
+                                        <article class="card">
+                                            <header class="card__thumb">
+                                                <a href="#"><img
+                                                        src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" /></a>
+                                            </header>
+                                            <div class="card__body">
+                                                <div class="card__category"><a href="#">pet</a></div>
+                                                <h2 class="card__title"><a href="#">an ice cream sundae party！</a></h2>
+                                                <div class="card__subtitle">an ice cream sundae party！</div>
+                                                <p class="card__description">5. Pour the mixture into a non-stick container and then freeze overnight. Take
+                                                    treating your dog a step further by turning it into an ice cream sundae party!</p>
+                                            </div>
+                                        </article>
+                                        <article class="card">
+                                            <header class="card__thumb">
+                                                <a href="#"><img
+                                                        src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" /></a>
+                                            </header>
+                                            <div class="card__body">
+                                                <div class="card__category"><a href="#">pet</a></div>
+                                                <h2 class="card__title"><a href="#">an ice cream sundae party！</a></h2>
+                                                <div class="card__subtitle">an ice cream sundae party！</div>
+                                                <p class="card__description">5. Pour the mixture into a non-stick container and then freeze overnight. Take
+                                                    treating your dog a step further by turning it into an ice cream sundae party!</p>
+                                            </div>
+                                        </article>
+                                        <article class="card">
+                                            <header class="card__thumb">
+                                                <a href="#"><img
+                                                        src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" /></a>
+                                            </header>
+                                            <div class="card__body">
+                                                <div class="card__category"><a href="#">pet</a></div>
+                                                <h2 class="card__title"><a href="#">an ice cream sundae party！</a></h2>
+                                                <div class="card__subtitle">an ice cream sundae party！</div>
+                                                <p class="card__description">5. Pour the mixture into a non-stick container and then freeze overnight. Take
+                                                    treating your dog a step further by turning it into an ice cream sundae party!</p>
+                                            </div>
+                                        </article>
+                    </div>
+            </div>
+        
+    
+    </section>
+
+  
+    </main>
+    </div>
+    @@include('html/footer.html',{})
+    
+    <!--Подключение Jquery-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    
+    <!--Подключение slick-slider-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+
+
+    <script src="js/app.min.js"></script>
+  
+
+
+
+</body>
+</html>

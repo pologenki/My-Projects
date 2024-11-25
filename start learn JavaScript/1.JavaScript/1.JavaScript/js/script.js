@@ -52,6 +52,8 @@ sum(a, b)
 
 
 
+
+
 /*/
 function first(a, g) {
     let g = 'Konstantin'
@@ -290,3 +292,28 @@ kos.forEach(function (el) {
  //! Интструкции if else
 
  */
+
+const kosten = 'Olga';
+
+console.log(kosten);
+
+const num1 = 8;
+const num2 = 9;
+
+console.log(num1 - num2)
+
+
+
+
+const getStatus = (age) => {
+    if(age < 14) return 'Children'
+    if(age < 20) return 'Teenager'
+    if(age < 50) return 'Adult'
+
+    return 'Old'
+
+
+}
+
+console.log(getStatus(19));
+

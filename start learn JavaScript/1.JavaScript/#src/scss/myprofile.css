@@ -1,0 +1,254 @@
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.profile-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Левая колонка */
+.sidebar {
+  width: 30%;
+  background: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.profile-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+position: relative;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.profile-info-iqon{
+    border-radius: 20%;
+    width: 5em;
+
+}
+
+
+.location {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.actions .btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #108A00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.actions .btn:hover {
+  background: #005bb5;
+}
+
+.quick-details p {
+  margin: 10px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.quick-details a {
+  color: #0a7fda;
+  text-decoration: none;
+}
+
+.quick-details a:hover {
+  text-decoration: underline;
+}
+
+/* Правая колонка */
+.main-content {
+  width: 70%;
+  padding: 20px;
+}
+
+.profile-summary {
+  margin-bottom: 20px;
+}
+
+.profile-summary h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.rate-and-edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.hourly-rate {
+  font-size: 1.2em;
+  color: #108A00;
+  font-weight: bold;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  color: #108A00;
+}
+
+.edit-btn:hover {
+  text-decoration: underline;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.portfolio-placeholder {
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #ddd;
+  color: #888;
+}
+
+.skills-list span {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.name-of {
+    padding: 10px 0px;
+    font-weight: 400;
+}
+
+
+.confirmed{
+    color: white;
+    padding: 5px 10px;
+    background-color: #108A00;
+    
+    
+}
+
+
+.btn{
+    margin-top: 10px;
+}
+
+/**/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.item span {
+  color: #888;
+}
+
+.section p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.section span {
+  color: #4caf50;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+a {
+  font-size: 14px;
+  color: #4caf50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+.profile-pic-img {
+    position: relative;
+    width: 8rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.brround {
+    border-radius: 20%;
+    width: 120px;
+    height: 150px;
+    /* border: 1px solid gray; */
+}

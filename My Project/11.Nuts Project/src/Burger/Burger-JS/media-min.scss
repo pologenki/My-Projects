@@ -1,0 +1,23 @@
+/*!Media*/
+
+@media (min-width: 767px){
+    .menu__list{
+      display: flex;
+      align-items: center;
+    }
+  
+  .menu__list > li{
+  padding: 10px 0;
+  }
+  /*Это настройки для выподяющего меню при наведении*/
+  .menu__sub-list{
+    transform: translate(0px 10%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+    pointer-events: none;
+  }
+  /*Это настройки для выподяющего меню при наведении*/
+  }
+  
+  /**/
